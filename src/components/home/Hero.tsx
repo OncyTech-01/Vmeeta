@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="flex justify-center pt-[50px] px-[10px]">
       <div className="relative h-[919px] w-[1370px] overflow-hidden rounded-[40px] border border-[#E5E5E5]">
 
-        {/* Background Image */}
+        {/* Background Image  hhhh*/}
         <Image
           src="/images/figma/Hero.png"
           alt="Hero"

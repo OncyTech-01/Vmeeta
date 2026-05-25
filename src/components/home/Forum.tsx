@@ -24,8 +24,29 @@ export default function Forum() {
           <div className="h-[566px] w-[421.08px] shrink-0">
 
             {/* Badge */}
-            <div className="mb-8 inline-flex rounded-full bg-[#DCE8FF] ">
-              <span className="text-[13px] font-medium text-[#3B82F6]">
+            <div
+              className="
+                mb-6
+                inline-flex
+                items-center
+                justify-center
+                rounded-full
+                bg-[#DCE8FF]
+                px-4
+                py-2
+                sm:px-5
+                sm:py-2.5
+              "
+            >
+              <span
+                className="
+                  text-[11px]
+                  font-medium
+                  text-[#3B82F6]
+                  sm:text-[13px]
+                  whitespace-nowrap
+                "
+              >
                 Global communities
               </span>
             </div>
@@ -207,13 +228,34 @@ export default function Forum() {
             />
 
             {/* Phone UI */}
-            <Image
-              src="/images/figma/Forum7.png"
-              alt="forum phone"
-              width={324}
-              height={709}
-              className="absolute right-[35px] top-[40px] h-[704px] w-[312px] rounded-[40px] object-cover shadow-xl"
-            />
+            <div
+              className="
+              absolute
+              right-0
+              top-[40px]
+              w-[180px]
+              sm:w-[220px]
+              md:w-[260px]
+              lg:right-[35px]
+              lg:w-[312px]
+              z-10
+            "
+            >
+              <Image
+                src="/images/figma/Forum7.png"
+                alt="forum phone"
+                width={324}
+                height={709}
+                className="
+                  h-auto
+                  w-full
+                  rounded-[24px]
+                  lg:rounded-[40px]
+                  object-contain
+                  shadow-xl
+                "
+              />
+            </div>
           </div>
         </div>
       </div>

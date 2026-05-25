@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -34,23 +35,30 @@ export default function Navbar() {
 
         </div>
 
-        {/* Center Menu */}
         <ul className="flex items-center gap-[32px] text-[14px] font-medium text-black">
 
-          <li className="cursor-pointer hover:text-[#3B82F6] transition">
-            Home
+          <li>
+            <a href="/" className="hover:text-[#3B82F6] transition">
+              Home
+            </a>
           </li>
 
-          <li className="cursor-pointer hover:text-[#3B82F6] transition">
-            Feature
+          <li>
+            <a href="/" className="hover:text-[#3B82F6] transition">
+              Feature
+            </a>
           </li>
 
-          <li className="cursor-pointer hover:text-[#3B82F6] transition">
-            About us
+          <li>
+            <a href="/" className="hover:text-[#3B82F6] transition">
+              About us
+            </a>
           </li>
 
-          <li className="cursor-pointer hover:text-[#3B82F6] transition">
-            Contact us
+          <li>
+            <a href="/" className="hover:text-[#3B82F6] transition">
+              Contact us
+            </a>
           </li>
 
         </ul>

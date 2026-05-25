@@ -104,7 +104,7 @@ export default function Hero() {
                 px-[36px]
                 pt-[13px]
                 pb-[13px]
-                text-[14px]
+                text-[13px]
                 font-semibold
                 text-black
                 shadow-md
@@ -113,7 +113,7 @@ export default function Hero() {
               <span>Get Started</span>
 
               <span className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#F4F7FF]">
-                <FaArrowRight className="text-[12px] text-[#2D79F5]" />
+                <FaArrowRight className="text-[10px] text-[#2D79F5]" />
               </span>
             </button>
 

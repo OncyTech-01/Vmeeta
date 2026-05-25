@@ -81,13 +81,19 @@ export default function MyDay() {
               className="absolute left-[480px] top-[-12px] z-20 object-contain"
             />
 
-            <Image
-              src="/images/figma/MD3.png"
-              alt="top3"
-              width={120}
-              height={36}
-              className="absolute right-[0px] top-[-20px] z-20 object-contain"
-            />
+            {/* Top Right Small Card */}
+            <div className="absolute right-[0px] top-[-20px] z-20 rounded-full bg-[#F7D88A] px-2 py-1 shadow-sm">
+              <div className="flex items-center gap-2">
+                <img
+                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                  alt="profile"
+                  className="h-[20px] w-[20px] rounded-full object-cover"
+                />
+                <p className="text-[8px] text-[#7B5B14]">
+                  Beautiful Family bless you
+                </p>
+              </div>
+            </div>
 
             {/* Card 1 */}
             <div className="overflow-hidden rounded-[20px]">
@@ -123,21 +129,33 @@ export default function MyDay() {
             </div>
 
             {/* Bottom Small Images */}
-            <Image
-              src="/images/figma/MD4.png"
-              alt="bottom1"
-              width={110}
-              height={30}
-              className="absolute left-[10px] bottom-[-28px] z-20 object-contain"
-            />
+            {/* Bottom Left Card */}
+            <div className="absolute left-[10px] bottom-[-28px] z-20 rounded-full bg-[#F6C8D0] px-2 py-1 shadow-sm">
+              <div className="flex items-center gap-2">
+                <img
+                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                  alt="profile"
+                  className="h-[20px] w-[20px] rounded-full object-cover"
+                />
 
-            <Image
-              src="/images/figma/MD5.png"
-              alt="bottom2"
-              width={120}
-              height={30}
-              className="absolute left-[300px] bottom-[-28px] z-20 object-contain"
-            />
+                <p className="text-[12px] text-[#5F4A4A] whitespace-nowrap">
+                  Super cool 🖤
+                </p>
+              </div>
+            </div>
+
+            {/* Bottom Middle Card */}
+            <div className="absolute left-[300px] bottom-[-28px] z-20 flex items-center gap-2 rounded-full bg-[#DDD2FF] px-2 py-1 shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                alt="profile"
+                className="h-[20px] w-[20px] rounded-full object-cover"
+              />
+
+              <p className="text-[10px] text-[#5B4A8A] whitespace-nowrap">
+                Greetings from Korea!
+              </p>
+            </div>
 
             <Image
               src="/images/figma/MD6.png"

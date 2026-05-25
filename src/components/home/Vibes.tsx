@@ -4,7 +4,6 @@ import { ArrowRight } from "lucide-react";
 export default function Vibe() {
   return (
     <section className="flex justify-center px-[10px] pt-[48px]">
-
       <div
         className="
           relative
@@ -17,8 +16,6 @@ export default function Vibe() {
           py-[30px]
         "
       >
-
-
         <div className="flex h-full items-center gap-[85px]">
 
           {/* Left Content */}
@@ -53,19 +50,19 @@ export default function Vibe() {
             {/* Button */}
             <button
               className="
-              mt-8
-              flex
-              items-center
-              gap-2
-              rounded-full
-              bg-[#2D79F5]
-              px-[18px]
-              py-[10px]
-              text-[14px]
-              font-semibold
-              text-white
-              shadow-[0px_8px_20px_rgba(45,121,245,0.35)]
-  "
+                mt-8
+                flex
+                items-center
+                gap-2
+                rounded-full
+                bg-[#2D79F5]
+                px-[18px]
+                py-[10px]
+                text-[14px]
+                font-semibold
+                text-white
+                shadow-[0px_8px_20px_rgba(45,121,245,0.35)]
+              "
             >
               Start Exploring
 
@@ -86,33 +83,27 @@ export default function Vibe() {
                 />
               </div>
             </button>
-
           </div>
 
           {/* Phones */}
-          <div className="relative flex items-center gap-4 -ml-[10px]">
+          <div className="relative -ml-[10px] flex items-center gap-4">
 
-            {/* ---------- TOP SMALL IMAGES ---------- */}
+            {/* ---------- TOP LEFT CARD ---------- */}
+            <div className="absolute left-[30px] top-[0px] z-20 flex items-center gap-2">
+              <img
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                alt="profile"
+                className="h-[42px] w-[42px] rounded-full object-cover"
+              />
 
-            {/* Top Profile */}
-            <Image
-              src="/images/figma/V1.png"
-              alt="top-profile"
-              width={42}
-              height={42}
-              className="absolute left-[30px] top-[0px] z-20 object-contain"
-            />
+              <div className="rounded-full bg-[#F6C9CD] px-4 py-2 shadow-sm">
+                <p className="whitespace-nowrap text-[11px] text-[#5F4A4A]">
+                  Super cool dance bro 🖤
+                </p>
+              </div>
+            </div>
 
-            {/* Top Badge */}
-            <Image
-              src="/images/figma/VT1.png"
-              alt="top-badge"
-              width={95}
-              height={28}
-              className="absolute left-[80px] top-[8px] z-20 object-contain"
-            />
-
-            {/* Top Heart */}
+            {/* ---------- HEART IMAGE (UNCHANGED) ---------- */}
             <Image
               src="/images/figma/V2.png"
               alt="top-heart"
@@ -121,25 +112,22 @@ export default function Vibe() {
               className="absolute left-[650px] top-[-1px] z-20 object-contain"
             />
 
-            {/* Top Badge */}
-            <Image
-              src="/images/figma/V3.png"
-              alt="top-badge"
-              width={95}
-              height={28}
-              className="absolute right-[40px] top-[25px] z-20 object-contain"
-            />
+            {/* ---------- TOP RIGHT CARD ---------- */}
+            <div className="absolute right-[-5px] top-[15px] z-20 flex items-center gap-2">
+              <div className="rounded-full bg-[#DDD2FF] px-4 py-2 shadow-sm">
+                <p className="whitespace-nowrap text-[11px] text-[#5B4A8A]">
+                  You look cute.
+                </p>
+              </div>
 
-            <Image
-              src="/images/figma/VT6.png"
-              alt="top-profile"
-              width={42}
-              height={42}
-              className="absolute right-[-5px] top-[15px] z-20 object-contain"
-            />
+              <img
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                alt="profile"
+                className="h-[42px] w-[42px] rounded-full object-cover"
+              />
+            </div>
 
-
-            {/* Phone 1 */}
+            {/* ---------- PHONE 1 ---------- */}
             <Image
               src="/images/figma/Vibe0.png"
               alt="vibe1"
@@ -148,16 +136,16 @@ export default function Vibe() {
               className="rounded-[28px] object-cover"
             />
 
-            {/* Phone 2 */}
+            {/* ---------- PHONE 2 ---------- */}
             <Image
               src="/images/figma/Vibes1.png"
               alt="vibe2"
               width={310}
-              height= {650}
+              height={650}
               className="rounded-[28px] pb-[60px] object-cover"
             />
 
-            {/* Phone 3 */}
+            {/* ---------- PHONE 3 ---------- */}
             <Image
               src="/images/figma/Vibes3.png"
               alt="vibe3"
@@ -166,28 +154,22 @@ export default function Vibe() {
               className="rounded-[28px] pt-[30px] object-cover"
             />
 
-            {/* ---------- BOTTOM SMALL IMAGES ---------- */}
+            {/* ---------- BOTTOM CARD ---------- */}
+            <div className="absolute bottom-[-6px] left-[260px] z-20 flex items-center gap-2">
+              <img
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                alt="profile"
+                className="h-[48px] w-[48px] rounded-full object-cover"
+              />
 
-            {/* Bottom Profile */}
-            <Image
-              src="/images/figma/V4.png"
-              alt="bottom-profile"
-              width={48}
-              height={48}
-              className="absolute left-[260px] bottom-[-6px] z-20 object-contain"
-            />
-
-            {/* Bottom Badge */}
-            <Image
-              src="/images/figma/VT4.png"
-              alt="bottom-badge"
-              width={120}
-              height={30}
-              className="absolute left-[320px] bottom-[0px] z-20 object-contain"
-            />
+              <div className="rounded-full bg-[#DDD2FF] px-4 py-2 shadow-sm">
+                <p className="whitespace-nowrap text-[11px] text-[#5B4A8A]">
+                  best recipe will surely try it
+                </p>
+              </div>
+            </div>
 
           </div>
-
         </div>
       </div>
     </section>

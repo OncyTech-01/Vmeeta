@@ -9,19 +9,49 @@ export default function Forum() {
         relative
         left-[1px]
         top-[4px]
-        h-[915px]
-        w-[1453px]
+
+        w-full
+        min-h-[980px]
+
         overflow-hidden
         rounded-[40px]
         bg-[#FBF0FC]
-        px-[42px]
-        py-[45px]
+
+        px-[20px]
+        py-[30px]
+
+        md:px-[42px]
+        md:py-[45px]
+
+        lg:h-[915px]
+        lg:w-[1453px]
         "
       >
-        <div className="flex h-full items-center">
+        <div
+          className="
+          flex
+          flex-col
+          items-center
+
+          lg:flex-row
+          lg:h-full
+          lg:items-center
+"
+        >
 
           {/* Left Content */}
-          <div className="h-[566px] w-[421.08px] shrink-0">
+          <div
+            className="
+            w-full
+            max-w-[320px]
+            text-center
+            shrink-0
+
+            lg:h-[566px]
+            lg:w-[421px]
+            lg:text-left
+          "
+          >
 
             {/* Badge */}
             <div
@@ -52,7 +82,21 @@ export default function Forum() {
             </div>
 
             {/* Heading */}
-            <h2 className="text-[64px] font-bold leading-[70px] text-black">
+            <h2
+              className="
+              text-[34px]
+              leading-[38px]
+
+              md:text-[48px]
+              md:leading-[54px]
+
+              lg:text-[64px]
+              lg:leading-[70px]
+
+              font-bold
+              text-black
+            "
+            >
               Every
               <br />
               interest has
@@ -108,24 +152,72 @@ export default function Forum() {
           </div>
 
           {/* Right Section */}
-          <div className="relative mr-[15px] h-[720px] w-[900px] shrink-0">
+          <div
+            className="
+            relative
+            w-[340px]
+            h-[500px]
+            shrink-0
+            mx-auto
+
+            md:w-[500px]
+            md:h-[650px]
+
+            lg:mr-[15px]
+            lg:h-[720px]
+            lg:w-[900px]
+          "
+          >
 
             {/* Gaming */}
-            <div className="absolute left-[120px] top-[5px] z-20 rounded-full bg-[#DDD6FE] px-5 py-2 text-[13px] text-[#6D28D9] shadow-sm">
+            <div className="
+              absolute
+              left-[15px]
+              top-[15px]
+              z-20
+              rounded-full
+              bg-[#DDD6FE]
+              px-2 py-1
+              text-[8px]
+              text-[#6D28D9]
+              shadow-sm
+
+              lg:left-[120px]
+              lg:top-[5px]
+              lg:px-5
+              lg:py-2
+              lg:text-[13px]
+              ">
               🎮 Gaming
             </div>
             {/* Music */}
-            <div className="absolute left-[420px] top-[20px] z-20 rounded-full bg-[#DBEAFE] px-5 py-2 text-[13px] text-[#2563EB] shadow-sm">
+            <div className="
+            absolute
+            right-[15px]
+            top-[15px]
+            z-20
+            rounded-full
+            bg-[#DBEAFE]
+            px-2 py-1
+            text-[8px]
+            text-[#2563EB]
+            shadow-sm
+
+            lg:left-[420px]
+            lg:right-auto
+            lg:top-[20px]
+            lg:px-5
+            lg:py-2
+            lg:text-[13px]
+            ">
               🎵 Music
             </div>
 
             {/* Top Profile Image */}
-            <Image
-              src="/images/figma/F1.png"
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
               alt="top-profile"
-              width={44}
-              height={44}
-              className="absolute left-[460px] top-[-50px] z-20 object-contain"
+              className="absolute left-[460px] top-[-50px] z-20 h-[44px] w-[44px] rounded-full object-cover"
             />
 
             {/* Travel Image */}
@@ -134,7 +226,18 @@ export default function Forum() {
               alt="travel"
               width={115}
               height={34}
-              className="absolute left-[10px] bottom-[-70px] z-20 object-contain"
+              className="
+              absolute
+              left-[20px]
+              bottom-[10px]
+              z-20
+              w-[70px]
+              object-contain
+
+              lg:left-[10px]
+              lg:bottom-[-50px]
+              lg:w-[115px]
+              "
             />
 
             {/* Study Image */}
@@ -143,7 +246,19 @@ export default function Forum() {
               alt="study"
               width={115}
               height={34}
-              className="absolute left-[300px] bottom-[-15px] z-20 object-contain"
+              className="
+                absolute
+                right-[10px]
+                bottom-[10px]
+                z-20
+                w-[70px]
+                object-contain
+
+                lg:left-[300px]
+                lg:right-auto
+                lg:bottom-[-16px]
+                lg:w-[115px]
+                "
             />
 
             {/* Creator Image */}
@@ -161,16 +276,32 @@ export default function Forum() {
               alt="creator"
               width={20}
               height={18}
-              className="absolute right-[430px] bottom-[400px] z-20 object-contain"
+              className="absolute right-[430px] bottom-[330px] z-20 object-contain"
             />
 
-            {/* Top Left */}
             <Image
               src="/images/figma/Forum1.png"
               alt="forum1"
               width={223}
               height={149}
-              className="absolute left-[60px] top-[50px] h-[149px] w-[223px] rounded-[20px] object-cover object-top"
+              className="
+    absolute
+    left-[15px]
+    top-[70px]
+    w-[85px]
+    h-[65px]
+    rounded-[12px]
+    rotate-[-10deg]
+    object-cover
+    z-20
+
+    lg:left-[60px]
+    lg:top-[50px]
+    lg:h-[149px]
+    lg:w-[223px]
+    lg:rounded-[20px]
+    lg:rotate-0
+  "
             />
 
             {/* Top Right */}
@@ -179,7 +310,24 @@ export default function Forum() {
               alt="forum2"
               width={233}
               height={163}
-              className="absolute left-[290px] top-[65px] h-[163px] w-[233px] rounded-[24px] object-cover"
+              className="
+    absolute
+    right-[15px]
+    top-[75px]
+    w-[90px]
+    h-[70px]
+    rounded-[12px]
+    rotate-[10deg]
+    object-cover
+    z-20
+
+    lg:left-[290px]
+    lg:top-[65px]
+    lg:h-[163px]
+    lg:w-[233px]
+    lg:rounded-[24px]
+    lg:rotate-0
+  "
             />
 
             {/* Center Big */}
@@ -188,7 +336,24 @@ export default function Forum() {
               alt="forum3"
               width={372}
               height={298}
-              className="absolute left-[4px] top-[220px] h-[298px] w-[372px] rounded-[30px] object-cover"
+              className="
+    absolute
+    left-[5px]
+    top-[220px]
+    w-[95px]
+    h-[120px]
+    rounded-[16px]
+    rotate-[-8deg]
+    object-cover
+    z-20
+
+    lg:left-[4px]
+    lg:top-[220px]
+    lg:h-[298px]
+    lg:w-[372px]
+    lg:rounded-[30px]
+    lg:rotate-0
+  "
             />
 
             {/* Right Small */}
@@ -197,16 +362,50 @@ export default function Forum() {
               alt="forum5"
               width={160}
               height={154}
-              className="absolute left-[380px] top-[330px] h-[154px] w-[160px] rounded-[24px] object-cover"
+              className="
+    absolute
+    right-[10px]
+    top-[230px]
+    w-[90px]
+    h-[90px]
+    rounded-[12px]
+    rotate-[8deg]
+    object-cover
+    z-20
+
+    lg:left-[380px]
+    lg:top-[330px]
+    lg:h-[154px]
+    lg:w-[160px]
+    lg:rounded-[24px]
+    lg:rotate-0
+  "
             />
 
             {/* Bottom Left */}
             <Image
               src="/images/figma/Forum3.png"
               alt="forum4"
-              width={297}
-              height={211}
-              className="absolute left-[-90px] top-[540px] h-[211px] w-[297px] rounded-[24px] object-cover"
+              width={285}
+              height={200}
+              className="
+    absolute
+    left-[10px]
+    bottom-[45px]
+    w-[90px]
+    h-[70px]
+    rounded-[12px]
+    rotate-[-8deg]
+    object-cover
+    z-20
+
+    lg:left-[-15px]
+    lg:top-[540px]
+    lg:h-[180px]
+    lg:w-[275px]
+    lg:rounded-[24px]
+    lg:rotate-0
+  "
             />
 
             {/* Bottom Center */}
@@ -215,31 +414,76 @@ export default function Forum() {
               alt="forum6"
               width={262}
               height={177}
-              className="absolute left-[260px] bottom-[15px] h-[177px] w-[262px] rounded-[24px] object-cover"
+              className="
+    absolute
+    right-[10px]
+    bottom-[45px]
+    w-[95px]
+    h-[75px]
+    rounded-[12px]
+    rotate-[8deg]
+    object-cover
+    z-20
+
+    lg:left-[280px]
+    lg:bottom-[15px]
+    lg:h-[177px]
+    lg:w-[262px]
+    lg:rounded-[24px]
+    lg:rotate-0
+  "
             />
 
             {/* Bottom Profile Image */}
-            <Image
-              src="/images/figma/F2.png"
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=100&w=2000&auto=format&fit=crop"
               alt="bottom-profile"
-              width={48}
-              height={48}
-              className="absolute left-[230px] bottom-[-40px] z-20 object-contain"
+              className="
+                absolute
+                left-1/2
+                bottom-[0px]
+                -translate-x-1/2
+                z-20
+
+                h-[38px]
+                w-[38px]
+                rounded-full
+                object-cover
+
+                lg:left-[250px]
+                lg:bottom-[-70px]
+                lg:h-[48px]
+                lg:w-[48px]
+                lg:translate-x-0
+                "
+              style={{
+                imageRendering: "crisp-edges",
+                backfaceVisibility: "hidden",
+                transform: "translateZ(0)",
+              }}
             />
+
 
             {/* Phone UI */}
             <div
               className="
-              absolute
-              right-0
-              top-[40px]
-              w-[180px]
-              sm:w-[220px]
-              md:w-[260px]
-              lg:right-[35px]
-              lg:w-[312px]
-              z-10
-            "
+    absolute
+    left-1/2
+    top-[30px]
+    -translate-x-1/2
+
+    w-[185px]
+    z-30
+
+    sm:w-[210px]
+    md:w-[240px]
+
+    lg:right-[35px]
+    lg:left-auto
+    lg:translate-x-0
+    lg:top-[40px]
+    lg:w-[312px]
+  "
             >
               <Image
                 src="/images/figma/Forum7.png"
@@ -247,18 +491,18 @@ export default function Forum() {
                 width={324}
                 height={709}
                 className="
-                  h-auto
-                  w-full
-                  rounded-[24px]
-                  lg:rounded-[40px]
-                  object-contain
-                  shadow-xl
-                "
+      h-auto
+      w-full
+      rounded-[24px]
+      lg:rounded-[40px]
+      object-contain
+      shadow-xl
+    "
               />
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }

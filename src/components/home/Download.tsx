@@ -46,7 +46,7 @@ export default function Download() {
                 sm:leading-[56px]
                 md:text-[68px]
                 md:leading-[72px]
-                lg:text-[90px]
+                lg:text-[86px]
                 lg:leading-[90px]
                 font-medium text-white
               "
@@ -81,16 +81,18 @@ export default function Download() {
             <button
               className="
                 mt-6 md:mt-8
-                h-[56px]
-                w-full
-                sm:w-[300px]
+                h-[42px]
+                w-[180px]
+                sm:w-[220px]
+                sm:h-[56px]
                 md:w-[360px]
                 lg:h-[92px]
                 lg:w-[416px]
                 rounded-[14px]
                 bg-[linear-gradient(180deg,#0851C7_0%,#3A81F4_100%)]
                 px-6
-                text-[16px]
+                text-[13px]
+                sm:text-[16px]
                 md:text-[20px]
                 lg:text-[23px]
                 font-bold
@@ -114,7 +116,13 @@ export default function Download() {
                 alt="google play"
                 width={190}
                 height={57}
-                className="w-[140px] sm:w-[160px] md:w-[180px] lg:w-[190px] h-auto"
+                className="
+                w-[100px]
+                sm:w-[140px]
+                md:w-[180px]
+                lg:w-[190px]
+                h-auto
+              "
               />
 
               <Image
@@ -122,7 +130,13 @@ export default function Download() {
                 alt="app store"
                 width={190}
                 height={60}
-                className="w-[140px] sm:w-[160px] md:w-[180px] lg:w-[190px] h-auto"
+                className="
+                  w-[100px]
+                  sm:w-[140px]
+                  md:w-[180px]
+                  lg:w-[190px]
+                  h-auto
+                "
               />
             </div>
           </div>

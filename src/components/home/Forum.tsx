@@ -238,6 +238,7 @@ export default function Forum() {
               lg:bottom-[-50px]
               lg:w-[115px]
               "
+            style={{ height: 'auto' }}
             />
 
             {/* Study Image */}
@@ -259,6 +260,7 @@ export default function Forum() {
                 lg:bottom-[-16px]
                 lg:w-[115px]
                 "
+            style={{ height: 'auto' }}
             />
 
             {/* Creator Image */}
@@ -268,6 +270,7 @@ export default function Forum() {
               width={120}
               height={34}
               className="absolute right-[370px] bottom-[200px] z-20 object-contain"
+            style={{ height: 'auto' }}
             />
 
             {/* Creator Image */}
@@ -400,7 +403,7 @@ export default function Forum() {
     z-20
 
     lg:left-[-15px]
-    lg:top-[540px]
+    lg:top-[500px]
     lg:h-[180px]
     lg:w-[275px]
     lg:rounded-[24px]
@@ -486,7 +489,7 @@ export default function Forum() {
   "
             >
               <Image
-                src="/images/figma/Forum7.png"
+                src="/images/figma/ForumBigPhone.png"
                 alt="forum phone"
                 width={324}
                 height={709}

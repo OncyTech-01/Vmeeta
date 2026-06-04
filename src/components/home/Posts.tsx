@@ -5,12 +5,25 @@ export default function Posts() {
     <section className="flex justify-center pt-[48px] px-[8px]">
       <div
         className="
-          w-[1409px]
-          overflow-hidden
-          rounded-[30px]
-          bg-[linear-gradient(180deg,#FAF3EC_0%,#FFE2CC_100%)]
-          px-[40px]
-          py-[35px]
+         w-full
+    max-w-[471px]
+    h-[453px]
+
+    md:h-auto
+    lg:max-w-[1409px]
+
+    overflow-hidden
+    rounded-[30px]
+    bg-[linear-gradient(180deg,#FAF3EC_0%,#FFE2CC_100%)]
+
+    px-[16px]
+    py-[24px]
+
+    sm:px-[22px]
+    sm:py-[28px]
+
+    lg:px-[40px]
+    lg:py-[35px]
         "
       >
         {/* Top Content */}
@@ -137,7 +150,7 @@ export default function Posts() {
 
                 <div className="absolute left-3 top-2 flex items-start gap-2">
                   <img
-                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100"
+                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="profile"
                     className="h-[26px] w-[26px] rounded-full border border-white object-cover"
                   />
@@ -176,7 +189,7 @@ export default function Posts() {
                 {/* Profile + Name */}
                 <div className="absolute left-2 top-2 flex items-start gap-2">
                   <img
-                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100"
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="profile"
                     className="h-[28px] w-[28px] rounded-full border border-white object-cover"
                   />
@@ -227,7 +240,7 @@ export default function Posts() {
                 {/* Profile + Name */}
                 <div className="absolute left-4 top-4 flex items-start gap-3">
                   <img
-                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100"
+                    src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="profile"
                     className="h-[42px] w-[42px] rounded-full border border-white object-cover"
                   />
@@ -260,7 +273,7 @@ export default function Posts() {
           {/* Center Big Image */}
           <div className="relative">
             <Image
-              src="/images/figma/P6.png"
+              src="/images/figma/Pnew6.png"
               alt="campfire"
               width={415}
               height={658}
@@ -314,13 +327,13 @@ export default function Posts() {
             <div className="absolute bottom-8 left-6 flex items-center gap-3">
               <div className="flex -space-x-2">
                 <img
-                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100"
+                  src="https://images.unsplash.com/photo-1654110455429-cf322b40a906?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="profile"
                   className="h-[34px] w-[34px] rounded-full border border-white object-cover"
                 />
 
                 <img
-                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100"
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="profile"
                   className="h-[34px] w-[34px] rounded-full border border-white object-cover"
                 />
@@ -365,7 +378,7 @@ export default function Posts() {
                 {/* Top Profile */}
                 <div className="absolute left-4 top-4 flex items-start gap-3">
                   <img
-                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100"
+                    src="https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="profile"
                     className="h-[60px] w-[60px] rounded-full border-[3px] border-[#2D79F5] object-cover"
                   />
@@ -385,13 +398,13 @@ export default function Posts() {
                 <div className="absolute bottom-4 left-4 flex items-center gap-4">
                   <div className="flex -space-x-3">
                     <img
-                      src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100"
+                      src="https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="profile"
                       className="h-[52px] w-[52px] rounded-full border-2 border-white object-cover"
                     />
 
                     <img
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
+                      src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="profile"
                       className="h-[52px] w-[52px] rounded-full border-2 border-white object-cover"
                     />
@@ -421,7 +434,7 @@ export default function Posts() {
                 {/* Top Profile */}
                 <div className="absolute left-4 top-4 flex items-start gap-3">
                   <img
-                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43?w=100"
+                    src="https://plus.unsplash.com/premium_photo-1693258698597-1b2b1bf943cc?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="profile"
                     className="h-[58px] w-[58px] rounded-full border-[3px] border-[#2D79F5] object-cover"
                   />
@@ -441,7 +454,7 @@ export default function Posts() {
                 <div className="absolute bottom-4 left-4 flex items-center gap-3">
                   <div className="flex -space-x-2">
                     <img
-                      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43?w=100"
+                      src="https://plus.unsplash.com/premium_photo-1693258698597-1b2b1bf943cc?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="profile"
                       className="h-[42px] w-[42px] rounded-full border-2 border-white object-cover"
                     />
@@ -517,21 +530,31 @@ export default function Posts() {
 
 
         {/* Mobile Layout */}
-        <div className="relative mt-8 h-[500px] w-full overflow-visible lg:hidden">
+        <div className="
+            relative
+            mt-8
+            h-[320px]
+            w-full
+            overflow-visible
+            lg:hidden
+          ">
 
           {/* Center Main Card */}
           <div className="absolute left-1/2 top-[0px] z-10 -translate-x-1/2">
             <Image
-              src="/images/figma/P6.png"
+              src="/images/figma/Pnew6.png"
               alt="campfire"
-              width={280}
-              height={540}
+              width={187}
+              height={273}
               className="
-                h-[540px]
-                min-w-[280px]
-                max-w-[300px]
-                rounded-[24px]
-                object-cover
+                  h-[273px]
+                  w-[187px]
+
+                  sm:h-[290px]
+                  sm:w-[200px]
+
+                  rounded-[24px]
+                  object-cover
                 "
             />
 
@@ -556,24 +579,24 @@ export default function Posts() {
           </div>
 
           {/* Left Image */}
-          <div className="absolute bottom-[-15px] left-[-20px] z-20 rotate-[-10deg]">
+          <div className="absolute bottom-[58px] left-[10px] z-20 rotate-[-8deg]">
             <Image
               src="/images/figma/P1.png"
               alt="left"
-              width={130}
-              height={155}
+              width={98}
+              height={110}
               className="rounded-[18px] shadow-xl"
             />
           </div>
 
           {/* Right Cat Card */}
-          <div className="absolute bottom-[-15px] right-[-25px] z-20 rotate-[8deg]">
+          <div className="absolute bottom-[50px] right-[10px] z-20 rotate-[8deg]">
             <div className="rounded-[16px] bg-white p-[8px] shadow-xl">
               <Image
                 src="/images/figma/Post4.png"
                 alt="cat"
-                width={135}
-                height={95}
+                width={100}
+                height={90}
                 className="rounded-[12px]"
               />
 

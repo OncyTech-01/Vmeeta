@@ -115,6 +115,7 @@ export default function Live() {
                 md:w-[240px]
                 lg:w-[360px]
               "
+              style={{ height: 'auto' }}
             />
           </div>
 
@@ -219,6 +220,7 @@ export default function Live() {
                 lg:top-[0px]
                 lg:w-auto
                 "
+            style={{ height: 'auto' }}
           />
 
           <Image
@@ -237,6 +239,7 @@ export default function Live() {
               lg:top-[49px]
               lg:w-auto
               "
+            style={{ height: 'auto' }}
           />
 
           <Image
@@ -255,6 +258,7 @@ export default function Live() {
               lg:top-[114.32px]
               lg:w-auto
               "
+            style={{ height: 'auto' }}
           />
 
           <Image
@@ -273,6 +277,7 @@ export default function Live() {
             lg:top-[181px]
             lg:w-auto
             "
+            style={{ height: 'auto' }}
           />
         </div>
       </div>

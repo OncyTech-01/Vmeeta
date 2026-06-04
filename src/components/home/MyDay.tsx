@@ -24,18 +24,16 @@ export default function MyDay() {
       <div
         className="
           w-full
-          max-w-[1367px]
-          min-h-[509px]
-          rounded-[30px]
-          bg-gradient-to-r
-          from-[#FEF7ED]
-          to-[#FEE7CA]
-          px-4
-          py-8
-          sm:px-6
-          md:px-8
-          lg:px-[50px]
-          lg:py-[45px]
+    max-w-[591px]
+    h-[227px]
+
+    md:max-w-[1367px]
+    md:min-h-[509px]
+
+    rounded-[30px]
+    bg-gradient-to-r
+    from-[#FEF7ED]
+    to-[#FEE7CA]
         "
       >
         <div className="flex h-full items-center justify-center gap-2 lg:gap-3 xl:gap-8">
@@ -69,8 +67,8 @@ export default function MyDay() {
               font-bold
               text-[#111111]
 
-              sm:text-[20px]
-              sm:leading-[24px]
+              sm:text-[18px]
+              sm:leading-[20px]
 
               md:text-[28px]
               md:leading-[34px]
@@ -92,8 +90,8 @@ export default function MyDay() {
           leading-[14px]
           text-[#666666]
 
-          sm:text-[11px]
-          sm:leading-[16px]
+          sm:text-[10px]
+          sm:leading-[13px]
 
           md:mt-4
           md:text-[14px]
@@ -123,7 +121,7 @@ export default function MyDay() {
                 text-[#6C3FC2]
 
                 sm:px-4
-                sm:text-[11px]
+                sm:text-[9px]
 
                 md:mt-5
                 md:rounded-[18px]
@@ -139,13 +137,34 @@ export default function MyDay() {
                               "
           >
             Start Sharing
-            <MdKeyboardArrowRight className="text-[18px]" />
+            <MdKeyboardArrowRight className="text-[14px]" />
           </button>
         </div>
 
         {/* Right Cards */}
         <div className="relative">
           <div className="relative flex items-center gap-[57px] md:gap-3 xl:gap-5">
+
+            {/* HEART */}
+                        <Image
+                          src="/images/figma/V2.png"
+                          alt="top-heart"
+                          width={28}
+                          height={28}
+                          className="
+                            absolute
+                            left-[400px]
+                            top-[-20px]
+                            z-20
+                            object-contain
+            
+                            max-lg:right-[50px]
+                            max-lg:left-auto
+                            max-lg:top-[-50px]
+                            max-lg:w-[18px]
+                          "
+                          
+                        />
 
             {/* CARD 1 */}
             <div
@@ -161,12 +180,20 @@ export default function MyDay() {
                 width={243}
                 height={350}
                 className="
-                    h-[230px]
-                    w-[170px]
-                    rounded-[20px]
-                    object-cover
-                    md:h-[350px]
-                    md:w-[243px]
+                    h-[30vw]
+                  w-[20vw]
+
+                  min-h-[176px]
+                  min-w-[117px]
+
+                  max-h-[230px]
+                  max-w-[170px]
+
+                  md:h-[350px]
+                  md:w-[243px]
+
+                  rounded-[20px]
+                  object-cover
                   "
               />
 
@@ -186,11 +213,11 @@ export default function MyDay() {
                 />
 
                 <div>
-                  <h3 className="text-[18px] font-semibold text-white">
+                  <h3 className="text-[13px] font-semibold text-white">
                     Sofia
                   </h3>
 
-                  <p className="text-[12px] text-white/90">
+                  <p className="text-[9px] text-white/90">
                     2h ago
                   </p>
                 </div>
@@ -199,11 +226,11 @@ export default function MyDay() {
               <div className="absolute bottom-2.5 left-3 right-3 z-10 h-[58px] rounded-b-[20px] bg-black/25" />
 
               <div className="absolute bottom-4 left-4 z-20">
-                <h3 className="text-[18px] font-medium text-white">
+                <h3 className="text-[13px] font-medium text-white">
                   Nature Therapy
                 </h3>
 
-                <p className="mt-1 text-[10px] text-white/90">
+                <p className="mt-1 text-[9px] text-white/90">
                   📍 Washington D.C, U.S.A
                 </p>
               </div>
@@ -223,12 +250,20 @@ export default function MyDay() {
                 width={243}
                 height={350}
                 className="
-                    h-[230px]
-                    w-[170px]
-                    rounded-[20px]
-                    object-cover
-                    md:h-[350px]
-                    md:w-[243px]
+                   h-[30vw]
+                  w-[20vw]
+
+                  min-h-[176px]
+                  min-w-[117px]
+
+                  max-h-[230px]
+                  max-w-[170px]
+
+                  md:h-[350px]
+                  md:w-[243px]
+
+                  rounded-[20px]
+                  object-cover
                   "
               />
 
@@ -240,17 +275,17 @@ export default function MyDay() {
 
               <div className="absolute left-4 top-6 z-20 flex items-center gap-2">
                 <img
-                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=200"
+                  src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="profile"
                   className="h-[40px] w-[40px] rounded-full border-2 border-white object-cover"
                 />
 
                 <div>
-                  <h3 className="text-[14px] font-semibold text-white">
+                  <h3 className="text-[10px] font-semibold text-white">
                     Jessica
                   </h3>
 
-                  <p className="text-[10px] text-white/90">
+                  <p className="text-[8px] text-white/90">
                     1d ago
                   </p>
                 </div>
@@ -259,11 +294,11 @@ export default function MyDay() {
               <div className="absolute bottom-5 left-3 right-3 z-10 h-[58px] rounded-b-[20px] bg-black/25" />
 
               <div className="absolute bottom-7 left-6 z-20">
-                <h3 className="text-[12px] font-medium text-white">
+                <h3 className="text-[10px] font-medium text-white">
                   Festival Vibe
                 </h3>
 
-                <p className="mt-1 text-[10px] text-white/90">
+                <p className="mt-1 text-[7px] text-white/90">
                   📍 Seoul, South Korea
                 </p>
               </div>
@@ -283,12 +318,20 @@ export default function MyDay() {
                 width={243}
                 height={350}
                 className="
-                    h-[230px]
-                    w-[170px]
-                    rounded-[20px]
-                    object-cover
-                    md:h-[350px]
-                    md:w-[243px]
+                    h-[30vw]
+                  w-[20vw]
+
+                  min-h-[176px]
+                  min-w-[117px]
+
+                  max-h-[230px]
+                  max-w-[170px]
+
+                  md:h-[350px]
+                  md:w-[243px]
+
+                  rounded-[20px]
+                  object-cover
                   "
               />
 
@@ -300,17 +343,17 @@ export default function MyDay() {
 
               <div className="absolute left-4 top-5 z-20 flex items-center gap-2">
                 <img
-                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=200"
+                  src="https://plus.unsplash.com/premium_photo-1727976411254-a5bcfd199750?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="profile"
                   className="h-[42px] w-[42px] rounded-full border-2 border-white object-cover"
                 />
 
                 <div>
-                  <h3 className="text-[18px] font-semibold text-white">
+                  <h3 className="text-[11px] font-semibold text-Grey">
                     Yun kin
                   </h3>
 
-                  <p className="text-[12px] text-white/90">
+                  <p className="text-[8px] text-Grey/90">
                     3h ago
                   </p>
                 </div>
@@ -319,11 +362,11 @@ export default function MyDay() {
               <div className="absolute bottom-0 left-0 right-0 z-10 h-[68px] bg-black/30 backdrop-blur-[2px]" />
 
               <div className="absolute bottom-3 left-4 z-20">
-                <h3 className="text-[16px] font-semibold text-white">
+                <h3 className="text-[10px] font-semibold text-white">
                   Sunday Picnic
                 </h3>
 
-                <p className="mt-1 text-[10px] text-white/90">
+                <p className="mt-1 text-[6px] text-white/90">
                   📍 San Francisco, U.S.A
                 </p>
               </div>

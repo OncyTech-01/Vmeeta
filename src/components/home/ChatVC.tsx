@@ -6,12 +6,19 @@ export default function ChatVC() {
       <div
         className="
           relative
+
           w-full
-          max-w-[1410px]
+          max-w-[519px]
           h-[177px]
+
+          sm:max-w-[650px]
           sm:h-[220px]
+
+          md:max-w-[1410px]
           md:min-h-[350px]
+
           lg:min-h-[516px]
+
           overflow-hidden
           rounded-[14px]
         "
@@ -31,8 +38,8 @@ export default function ChatVC() {
         <div
           className="
     absolute
-    left-[44%]
-    top-[10px]
+    left-[25%]
+    top-[45px]
     z-20
 
     sm:left-[46%]
@@ -110,12 +117,12 @@ export default function ChatVC() {
         <div
           className="
     absolute
-    left-[56%]
-    top-[16px]
+    left-[32%]
+    top-[65px]
     z-20
 
-    sm:left-[58%]
-    sm:top-[20px]
+    sm:left-[45%]
+    sm:top-[60px]
 
     md:left-[38%]
     md:top-[120px]

@@ -7,18 +7,27 @@ export default function Vibe() {
       <div
         className="
           relative
-          h-[753px]
-          w-[1410px]
-          overflow-hidden
-          rounded-[30px]
-          bg-[#0B60EA]/[0.07]
-          px-[40px]
-          py-[30px]
 
-          max-lg:w-full
-          max-lg:h-[780px]
-          max-lg:px-[20px]
-          max-lg:py-[25px]
+    md:w-full
+md:max-w-[1410px]
+md:h-[753px]
+
+max-md:w-full
+max-md:max-w-[445px]
+max-md:min-h-[542px]
+
+    overflow-hidden
+    rounded-[30px]
+    bg-[#0B60EA]/[0.07]
+
+    px-[16px]
+    py-[20px]
+
+    sm:px-[10px]
+    sm:py-[14px]
+
+    lg:px-[40px]
+    lg:py-[30px]
         "
       >
         <div
@@ -26,19 +35,20 @@ export default function Vibe() {
             flex
             h-full
             items-center
-            gap-[85px]
+            gap-[80px]
 
-            max-lg:flex-col
-            max-lg:justify-start
-            max-lg:gap-[35px]
+            max-md:flex-col
+max-md:justify-start
+max-md:gap-[5px]
           "
         >
           {/* Left Content */}
           <div
             className="
             max-w-[280px]
-            max-lg:max-w-[320px]
-            max-lg:text-center
+            max-md:max-w-[260px]
+max-md:mx-auto
+max-md:text-center
           "
           >
             {/* Badge */}
@@ -56,9 +66,9 @@ export default function Vibe() {
               leading-[50px]
               text-black
 
-              max-lg:text-[42px]
-              max-lg:leading-[42px]
-              max-lg:tracking-[-1px]
+              max-md:text-[24px]
+max-md:leading-[26px]
+max-md:tracking-[-1px]
   "
             >
               Find people
@@ -72,14 +82,14 @@ export default function Vibe() {
             {/* Description */}
             <p
               className="
-                mt-5
+                mt-2
                 text-[15px]
                 leading-[26px]
                 text-[#5F6368]
 
-                max-lg:text-[12px]
-                max-lg:leading-[20px]
-                max-lg:px-[10px]
+                max-md:text-[10px]
+max-md:leading-[12px]
+max-md:px-[4px]
               "
             >
               From creators and travelers
@@ -91,15 +101,15 @@ export default function Vibe() {
             {/* Button */}
             <button
               className="
-                max-lg:mb-[35px]
+                max-lg:mb-[10px]
                 flex
                 items-center
                 gap-2
                 rounded-full
                 bg-[#2D79F5]
-                px-[18px]
-                py-[10px]
-                text-[14px]
+                px-[14px]
+                py-[8px]
+                text-[10px]
                 font-semibold
                 text-white
                 shadow-[0px_8px_20px_rgba(45,121,245,0.35)]
@@ -112,8 +122,8 @@ export default function Vibe() {
               <div
                 className="
                   flex
-                  h-[24px]
-                  w-[24px]
+                  h-[20px]
+                  w-[20px]
                   items-center
                   justify-center
                   rounded-full
@@ -137,10 +147,10 @@ export default function Vibe() {
               items-center
               gap-4
 
-              max-lg:w-full
-              max-lg:h-[420px]
-              max-lg:mt-[15px]
-              max-lg:justify-center
+              max-md:w-full
+max-md:h-[330px]
+max-md:mt-[25px]
+max-md:justify-center
             "
           >
             {/* TOP LEFT CARD */}
@@ -155,11 +165,11 @@ export default function Vibe() {
                 gap-2
 
                 max-lg:left-[-10px]
-                max-lg:top-[70px]
+                max-lg:top-[-5px]
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="profile"
                 className="
                   h-[42px]
@@ -192,11 +202,12 @@ export default function Vibe() {
                 z-20
                 object-contain
 
-                max-lg:right-[20px]
+                max-lg:right-[50px]
                 max-lg:left-auto
-                max-lg:top-[0px]
+                max-lg:top-[-30px]
                 max-lg:w-[18px]
               "
+              style={{ height: 'auto' }}
             />
 
             {/* TOP RIGHT CARD */}
@@ -210,8 +221,8 @@ export default function Vibe() {
                 items-center
                 gap-2
 
-                max-lg:right-[10px]
-                max-lg:top-[40px]
+                max-lg:right-[14px]
+                max-lg:top-[15px]
               "
             >
               <div className="rounded-full bg-[#DDD2FF] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
@@ -221,7 +232,7 @@ export default function Vibe() {
               </div>
 
               <img
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                src="https://images.unsplash.com/photo-1658932447761-8a59cd02d201?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="profile"
                 className="
                   h-[42px]
@@ -242,15 +253,17 @@ export default function Vibe() {
               width={297}
               height={608}
               className="
-                rounded-[28px]
-                object-cover
+    rounded-[28px]
+    object-cover
 
-                max-lg:w-[105px]
-                max-lg:absolute
-                max-lg:left-[5px]
-                max-lg:bottom-[30px]
-                max-lg:rotate-[-10deg]
-              "
+    max-lg:h-[246px]
+    max-lg:w-[120px]
+
+    max-lg:absolute
+    max-lg:left-[5px]
+    max-lg:bottom-[25px]
+    max-lg:rotate-[-10deg]
+  "
             />
 
             {/* PHONE 2 */}
@@ -261,13 +274,14 @@ export default function Vibe() {
               height={650}
               className="
                 rounded-[28px]
-                pb-[60px]
                 object-cover
 
-                max-lg:w-[155px]
+                max-lg:h-[314px]
+                max-lg:w-[150px]
+
                 max-lg:absolute
                 max-lg:left-1/2
-                max-lg:bottom-[30px]
+                max-lg:bottom-[20px]
                 max-lg:-translate-x-1/2
                 max-lg:z-20
               "
@@ -280,16 +294,17 @@ export default function Vibe() {
               width={297}
               height={608}
               className="
-                rounded-[28px]
-                pt-[30px]
-                object-cover
+    rounded-[28px]
+    object-cover
 
-                max-lg:w-[115px]
-                max-lg:absolute
-                max-lg:right-[5px]
-                max-lg:bottom-[40px]
-                max-lg:rotate-[10deg]
-              "
+    max-lg:h-[245px]
+    max-lg:w-[120px]
+
+    max-lg:absolute
+    max-lg:right-[5px]
+    max-lg:bottom-[25px]
+    max-lg:rotate-[10deg]
+  "
             />
 
             {/* BOTTOM CARD */}
@@ -304,26 +319,26 @@ export default function Vibe() {
                 gap-2
 
                 max-lg:left-1/2
-                max-lg:bottom-[5px]
+                max-lg:bottom-[-15px]
                 max-lg:-translate-x-1/2
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                src="https://images.unsplash.com/photo-1654110455429-cf322b40a906?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="profile"
                 className="
-                  h-[48px]
-                  w-[48px]
+                  h-[38px]
+                  w-[38px]
                   rounded-full
                   object-cover
 
-                  max-lg:h-[34px]
-                  max-lg:w-[34px]
+                  max-lg:h-[28px]
+                  max-lg:w-[28px]
                 "
               />
 
-              <div className="rounded-full bg-[#DDD2FF] px-4 py-2 shadow-sm max-lg:px-6 max-lg:py-4">
-                <p className="max-lg:max-w-[90px] max-lg:text-center text-[9px] text-[#5B4A8A] max-lg:text-[6px]">
+              <div className="rounded-50% bg-[#DDD2FF] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-2">
+                <p className="max-lg:max-w-[70px] max-lg:text-center text-[9px] text-[#5B4A8A] max-lg:text-[6px]">
                   best recipe will surely try it
                 </p>
               </div>

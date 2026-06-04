@@ -53,7 +53,7 @@ export default function Forum() {
           <motion.div
             initial={{ opacity: 0, x: -70 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.9, ease: "easeOut" , delay: 0.3 }}
             className="
             w-full
@@ -193,7 +193,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
               className="
               absolute
@@ -219,7 +219,7 @@ export default function Forum() {
             <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.55 }}
             className="
             absolute
@@ -249,7 +249,7 @@ export default function Forum() {
               alt="top-profile"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
               className="absolute left-[460px] top-[-50px] z-20 h-[44px] w-[44px] rounded-full object-cover"
             />
@@ -258,7 +258,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, y: 6 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.7 }}
               className="absolute left-[20px] bottom-[45px] z-20 w-[70px] object-contain lg:left-[10px] lg:bottom-[-50px] lg:w-[115px]"
             >
@@ -275,7 +275,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, y: 6 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.75 }}
               className="absolute right-[20px] bottom-[50px] z-20 w-[70px] object-contain lg:left-[300px] lg:right-auto lg:bottom-[-16px] lg:w-[115px]"
             >
@@ -292,7 +292,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.45 }}
               className="absolute right-[370px] bottom-[200px] z-20 object-contain"
             >
@@ -309,7 +309,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.5 }}
               className="absolute right-[430px] bottom-[330px] z-20 object-contain"
             >
@@ -324,7 +324,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.4 }}
               className="absolute left-[5px] top-[60px] w-[85px] h-[65px] rounded-[12px] rotate-[-10deg] object-cover z-20 lg:left-[60px] lg:top-[50px] lg:h-[149px] lg:w-[223px] lg:rounded-[20px] lg:rotate-0"
             >
@@ -341,7 +341,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.45 }}
               className="absolute right-[5px] top-[65px] w-[90px] h-[70px] rounded-[12px] rotate-[10deg] object-cover z-20 lg:left-[290px] lg:top-[65px] lg:h-[163px] lg:w-[233px] lg:rounded-[24px] lg:rotate-0"
             >
@@ -358,7 +358,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, scale: 0.82 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.25 }}
               className="absolute left-[-5px] top-[180px] w-[95px] h-[120px] rounded-[16px] rotate-[-8deg] object-cover z-20 lg:left-[4px] lg:top-[220px] lg:h-[298px] lg:w-[372px] lg:rounded-[30px] lg:rotate-0"
             >
@@ -375,7 +375,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.6 }}
               className="absolute right-[1px] top-[185px] w-[90px] h-[90px] rounded-[12px] rotate-[8deg] object-cover z-20 lg:left-[380px] lg:top-[330px] lg:h-[154px] lg:w-[160px] lg:rounded-[24px] lg:rotate-0"
             >
@@ -392,7 +392,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.55 }}
               className="absolute left-[5px] bottom-[90px] w-[90px] h-[70px] rounded-[12px] rotate-[-8deg] object-cover z-20 lg:left-[-15px] lg:top-[525px] lg:h-[180px] lg:w-[275px] lg:rounded-[24px] lg:rotate-0"
             >
@@ -409,7 +409,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.9, ease: "easeOut", delay: 0.7 }}
               className="absolute right-[1px] bottom-[95px] w-[95px] h-[75px] rounded-[12px] rotate-[8deg] object-cover z-20 lg:left-[280px] lg:bottom-[15px] lg:h-[177px] lg:w-[262px] lg:rounded-[24px] lg:rotate-0"
             >
@@ -428,7 +428,7 @@ export default function Forum() {
               alt="bottom-profile"
               initial={{ opacity: 0, scale: 0.85 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.95 }}
               className="absolute left-1/2 bottom-[5px] -translate-x-1/2 z-30 h-[38px] w-[38px] rounded-full object-cover lg:left-[250px] lg:bottom-[-70px] lg:h-[48px] lg:w-[48px] lg:translate-x-0"
               style={{ imageRendering: "crisp-edges", backfaceVisibility: "hidden", transform: "translateZ(0)" }}
@@ -439,7 +439,7 @@ export default function Forum() {
             <motion.div
               initial={{ opacity: 0, y: 60, scale: 0.92 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.95, ease: "easeOut", delay: 0.1 }}
               className="absolute left-1/2 top-[30px] -translate-x-1/2 w-[185px] z-30 sm:w-[210px] md:w-[250px] lg:right-[35px] lg:left-auto lg:translate-x-0 lg:top-[40px] lg:w-[312px]"
             >

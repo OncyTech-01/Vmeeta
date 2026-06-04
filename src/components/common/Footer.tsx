@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import {
   FaTwitter,
@@ -6,8 +9,29 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import Link from "next/link";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function Footer() {
+
+  const [showButton, setShowButton] =
+    useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY > 100);
+    };
+
+    window.addEventListener(
+      "scroll",
+      handleScroll
+    );
+
+    return () =>
+      window.removeEventListener(
+        "scroll",
+        handleScroll
+      );
+  }, []);
   return (
     <footer className="bg-[#F8F8F8] px-[28px] xl:px-[55px] pb-[20px] pt-[35px]">
       <div className="mx-auto w-full max-w-[1511px]">
@@ -71,10 +95,12 @@ export default function Footer() {
               lg:items-end
             "
           >
+            
+
             {/* Social Icons */}
             <div
               className="
-                mt-2
+                mt-4
                 flex
                 gap-4
 
@@ -190,6 +216,45 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      {showButton && (
+        <button
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            })
+          }
+          className="
+      fixed
+      bottom-6
+      right-5
+      z-50
+
+      flex
+      h-[52px]
+      w-[52px]
+      items-center
+      justify-center
+
+      rounded-full
+      bg-white
+      shadow-[0px_6px_20px_rgba(0,0,0,0.12)]
+
+      transition-all
+      duration-300
+      hover:-translate-y-1
+      hover:shadow-[0px_10px_25px_rgba(0,0,0,0.18)]
+
+      md:h-[58px]
+      md:w-[58px]
+      md:right-8
+      md:bottom-8
+    "
+        >
+          <FaArrowUp className="text-[18px] text-[#111827]" />
+        </button>
+      )}
     </footer>
+
   );
 }

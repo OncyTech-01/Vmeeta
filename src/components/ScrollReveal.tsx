@@ -12,44 +12,25 @@ export function ScrollReveal({
 }: Props) {
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        y: 80,
-      }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-      }}
+  initial={{
+    opacity: 0,
+    x: -60,
+  }}
+  animate={{
+    opacity: 1,
+    x: 0,
+  }}
       viewport={{
-        once: false,
-        amount: 0.2,
+        once: true, // up/down scroll dono
+        amount: 0.25, // stable trigger
+        margin: "-120px 0px -120px 0px",
       }}
       transition={{
-        duration: 0.9,
-        ease: [0.25, 1, 0.5, 1],
+        duration: 0.85,
+        ease: "easeOut",
       }}
     >
-      <motion.div
-        initial={{
-          opacity: 0,
-          y: 40,
-        }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        viewport={{
-          once: false,
-          amount: 0.2,
-        }}
-        transition={{
-          delay: 0.25,
-          duration: 0.9,
-          ease: [0.25, 1, 0.5, 1],
-        }}
-      >
-        {children}
-      </motion.div>
+      {children}
     </motion.div>
   );
 }

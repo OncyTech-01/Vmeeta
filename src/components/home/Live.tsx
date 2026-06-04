@@ -51,9 +51,9 @@ export default function Live() {
               opacity: 1,
               x: 0,
             }}
-            
+
             viewport={{
-              once: false,
+              once: true,
               amount: 0.3,
             }}
             transition={{
@@ -138,9 +138,9 @@ export default function Live() {
               y: 0,
               scale: 1,
             }}
-            
+
             viewport={{
-              once: false,
+              once: true,
               amount: 0.3,
             }}
             transition={{
@@ -173,9 +173,9 @@ export default function Live() {
               opacity: 1,
               x: 0,
             }}
-            
+
             viewport={{
-              once: false,
+              once: true,
               amount: 0.3,
             }}
             transition={{
@@ -246,25 +246,25 @@ export default function Live() {
 
         {/* Floating Hearts */}
         <motion.div
-  initial={{
-    opacity: 0,
-    x: 80,
-  }}
-  whileInView={{
-    opacity: 0.85,
-    x: 0,
-  }}
-  
-  viewport={{
-    once: false,
-    amount: 0.3,
-  }}
-  transition={{
-    duration: 1,
-    delay: 0.4,
-    ease: [0.25, 1, 0.5, 1],
-  }}
-  className="
+          initial={{
+            opacity: 0,
+            x: 80,
+          }}
+          whileInView={{
+            opacity: 0.85,
+            x: 0,
+          }}
+
+          viewport={{
+            once: true,
+            amount: 0.3,
+          }}
+          transition={{
+            duration: 1,
+            delay: 0.4,
+            ease: [0.25, 1, 0.5, 1],
+          }}
+          className="
     absolute
     bottom-[10px]
     md:bottom-[80px]
@@ -282,7 +282,7 @@ export default function Live() {
     w-[120px]
     opacity-85
   "
->
+        >
           <Image
             src="/images/figma/Heart.png"
             alt="heart"

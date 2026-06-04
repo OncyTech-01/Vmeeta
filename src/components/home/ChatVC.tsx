@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function ChatVC() {
   return (
@@ -224,9 +227,27 @@ export default function ChatVC() {
       lg:py-12
     "
           >
-            {/* Heading */}
-            <h2
-              className="
+            <motion.div
+              initial={{
+                opacity: 0,
+                x: -60,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              viewport={{
+                once: true,
+                amount: 0.2,
+              }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+              }}
+            >
+              {/* Heading */}
+              <h2
+                className="
         text-[12px]
         leading-[14px]
         font-bold
@@ -241,23 +262,23 @@ export default function ChatVC() {
         lg:text-[48px]
         lg:leading-[54px]
       "
-            >
-              Some
-              <br />
+              >
+                Some
+                <br />
 
-              <span className="text-[#4D91FF]">
-                Conversations
-              </span>
+                <span className="text-[#4D91FF]">
+                  Conversations
+                </span>
 
-              <br />
-              make distance
-              <br />
-              disappear.
-            </h2>
+                <br />
+                make distance
+                <br />
+                disappear.
+              </h2>
 
-            {/* Description */}
-            <p
-              className="
+              {/* Description */}
+              <p
+                className="
         mt-2
         text-[8px]
         leading-[10px]
@@ -274,13 +295,13 @@ export default function ChatVC() {
         lg:text-[16px]
         lg:leading-[28px]
       "
-            >
-              Distance means nothing when real
-              conversations come from the heart,
-              connect or just be together.
+              >
+                Distance means nothing when real
+                conversations come from the heart,
+                connect or just be together.
 
-              <span
-                className="
+                <span
+                  className="
           ml-1
           inline-flex
           h-[10px]
@@ -299,13 +320,30 @@ export default function ChatVC() {
           lg:w-[20px]
           lg:text-[10px]
         "
-              >
-                💜
-              </span>
-            </p>
+                >
+                  💜
+                </span>
+              </p>
+            </motion.div>
 
             {/* Button */}
-            <button
+            <motion.button
+              initial={{
+                opacity: 0,
+                y: 20,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{
+                once: true,
+              }}
+              transition={{
+                duration: 0.7,
+                delay: 0.25,
+                ease: "easeOut",
+              }}
               className="
         mt-3
         h-[22px]
@@ -336,7 +374,7 @@ export default function ChatVC() {
       "
             >
               Start connecting
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>

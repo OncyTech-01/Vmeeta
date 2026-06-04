@@ -56,7 +56,7 @@ max-md:gap-[5px]
               x: 0,
             }}
             viewport={{
-              once: false,
+              once: true,
               amount: 0.2,
             }}
             transition={{
@@ -278,7 +278,7 @@ max-md:justify-center
                 rotate: 0,
               }}
               viewport={{
-                once: false,
+                once: true,
                 amount: 0.2,
               }}
               transition={{
@@ -320,7 +320,7 @@ max-md:justify-center
                 y: 0,
               }}
               viewport={{
-                once: false,
+                once: true,
                 amount: 0.2,
               }}
               transition={{
@@ -363,7 +363,7 @@ max-md:justify-center
                 rotate: 0,
               }}
               viewport={{
-                once: false,
+                once: true,
                 amount: 0.2,
               }}
               transition={{

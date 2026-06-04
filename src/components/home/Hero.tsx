@@ -1,5 +1,8 @@
+'use client';
+
 import Image from "next/image";
 import { FaRegEye, FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -50,65 +53,108 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/0" />
 
         {/* Content */}
-        <div
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: -80,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          viewport={{
+            once: true,
+            amount: 0.2,
+          }}
+          transition={{
+            duration: 1,
+            ease: "easeOut",
+          }}
           className="
-            absolute
-            left-3
-            top-3
-            w-[58%]
-            max-w-[190px]
+    absolute
+    left-3
+    top-3
+    w-[58%]
+    max-w-[190px]
 
-            sm:left-5
-            sm:top-5
-            sm:max-w-[280px]
+    sm:left-5
+    sm:top-5
+    sm:max-w-[280px]
 
-            md:left-8
-            md:top-8
-            md:max-w-[360px]
+    md:left-8
+    md:top-8
+    md:max-w-[360px]
 
-            lg:left-[45px]
-            lg:top-[40px]
-            lg:max-w-[420px]
-          "
+    lg:left-[45px]
+    lg:top-[40px]
+    lg:max-w-[420px]
+  "
         >
           {/* Top Badges */}
           <div className="mb-2 flex items-center gap-1 md:mb-6">
             {/* Live Badge */}
             <div
-              className="
-                flex
-                h-[22px]
-                w-[50px]
-                items-center
-                justify-center
-                rounded-[6px]
-                bg-[#FF2B2B]
+  className="
+    flex
+    h-[22px]
+    w-[50px]
+    items-center
+    justify-center
+    gap-[9px]
+    lg:gap-[15px]
+    rounded-[6px]
+    bg-[#FF2B2B]
 
-                sm:h-[36px]
-                sm:w-[85px]
+    sm:h-[36px]
+    sm:w-[85px]
 
-                md:h-[40px]
-                md:w-[100px]
+    md:h-[40px]
+    md:w-[100px]
 
-                lg:h-[46px]
-                lg:w-[139px]
-                lg:rounded-[12px]
-              "
-            >
-              <span
-                className="
-                  text-[10px]
-                  font-medium
-                  text-white
+    lg:h-[46px]
+    lg:w-[139px]
+    lg:rounded-[12px]
+  "
+>
+  {/* Live Circle */}
+  <motion.div
+    animate={{
+      scale: [1, 1.4, 1],
+      opacity: [1, 0.5, 1],
+    }}
+    transition={{
+      duration: 1,
+      repeat: Infinity,
+      ease: "easeInOut",
+    }}
+    className="
+      h-[6px]
+      w-[6px]
+      rounded-full
+      bg-white
 
-                  sm:text-[16px]
-                  md:text-[20px]
-                  lg:text-[32px]
-                "
-              >
-                Live
-              </span>
-            </div>
+      sm:h-[8px]
+      sm:w-[8px]
+
+      lg:h-[10px]
+      lg:w-[10px]
+    "
+  />
+
+  <span
+    className="
+      text-[10px]
+      font-medium
+      text-white
+
+      sm:text-[16px]
+      md:text-[20px]
+      lg:text-[32px]
+    "
+  >
+    Live
+  </span>
+</div>
 
             {/* Views */}
             <div
@@ -321,7 +367,7 @@ export default function Hero() {
               </span>
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

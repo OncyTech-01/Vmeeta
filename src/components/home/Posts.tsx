@@ -41,7 +41,7 @@ export default function Posts() {
             y: 0,
           }}
           viewport={{
-            once: false,
+            once: true,
             amount: 0.2,
           }}
           transition={{
@@ -127,7 +127,7 @@ export default function Posts() {
               x: 0,
             }}
             viewport={{
-              once: false,
+              once: true,
               amount: 0.2,
             }}
             transition={{
@@ -152,7 +152,7 @@ export default function Posts() {
                   y: 0,
                 }}
                 viewport={{
-                  once: false,
+                  once: true,
                   amount: 0.2,
                 }}
                 transition={{
@@ -433,7 +433,7 @@ export default function Posts() {
               x: 0,
             }}
             viewport={{
-              once: false,
+              once: true,
               amount: 0.2,
             }}
             transition={{

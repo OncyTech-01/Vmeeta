@@ -31,7 +31,7 @@ export default function MyDay() {
         y: 0,
       }}
       viewport={{
-        once: false,
+        once: true,
         amount: 0.2,
       }}
       transition={{
@@ -67,7 +67,7 @@ export default function MyDay() {
               x: 0,
             }}
             viewport={{
-              once: false,
+              once: true,
               amount: 0.3,
             }}
             transition={{
@@ -185,7 +185,7 @@ export default function MyDay() {
               x: 0,
             }}
             viewport={{
-              once: false,
+              once: true,
               amount: 0.3,
             }}
             transition={{

@@ -1,4 +1,7 @@
+'use client';
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Download() {
   return (
@@ -28,13 +31,30 @@ export default function Download() {
         <div className="absolute inset-0 bg-[#00193D]/5" />
 
         {/* Content */}
-        <div
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: -80,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          viewport={{
+            once: false,
+            amount: 0.2,
+          }}
+          transition={{
+            duration: 1,
+            delay: 0.2,
+            ease: "easeOut",
+          }}
           className="
-            relative z-10
-            flex h-full items-center
-            px-5 sm:px-8 md:px-[40px] lg:px-[60px]
-            py-10 md:py-16
-          "
+    relative z-10
+    flex h-full items-center
+    px-5 sm:px-8 md:px-[40px] lg:px-[60px]
+    py-10 md:py-16
+  "
         >
           <div className="max-w-[520px]">
             {/* Heading */}
@@ -140,7 +160,7 @@ export default function Download() {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Top Right Image */}
         <div

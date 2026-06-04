@@ -1,4 +1,7 @@
+'use client';
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Live() {
   return (
@@ -37,12 +40,32 @@ export default function Live() {
             lg:h-full
             lg:gap-0
           "
-        > 
+        >
           {/* Left Content */}
-          <div className="w-[95px]
-            sm:w-[140px]
-            md:w-[200px]
-            lg:max-w-[260px] text-center lg:text-left">
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: -60,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            
+            viewport={{
+              once: false,
+              amount: 0.3,
+            }}
+            transition={{
+              duration: 0.8,
+              delay: 0.25,
+              ease: [0.25, 1, 0.5, 1],
+            }}
+            className="w-[95px]
+  sm:w-[140px]
+  md:w-[200px]
+  lg:max-w-[260px] text-center lg:text-left"
+          >
             {/* Badge */}
             <div className="mb-5 flex items-center justify-center gap-2 lg:justify-start">
               <div className="h-[8px] w-[8px] rounded-full bg-[#FF5B5B]" />
@@ -100,10 +123,31 @@ export default function Live() {
             </p>
 
             <div className="mt-6 h-[2px] w-[50px] bg-[#FFB5B5] mx-auto lg:mx-0" />
-          </div>
+          </motion.div>
 
           {/* Center Phone */}
-          <div className="relative shrink-0">
+          <motion.div
+            className="relative shrink-0"
+            initial={{
+              opacity: 0,
+              y: 80,
+              scale: 0.96,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+            }}
+            
+            viewport={{
+              once: false,
+              amount: 0.3,
+            }}
+            transition={{
+              duration: 0.9,
+              ease: [0.25, 1, 0.5, 1],
+            }}
+          >
             <Image
               src="/images/figma/Live2.png"
               alt="live"
@@ -117,13 +161,33 @@ export default function Live() {
               "
               style={{ height: 'auto' }}
             />
-          </div>
+          </motion.div>
 
           {/* Right Content */}
-          <div className="w-[95px]
-              sm:w-[140px]
-              md:w-[200px]
-              lg:max-w-[260px] text-center lg:text-left">
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: 60,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            
+            viewport={{
+              once: false,
+              amount: 0.3,
+            }}
+            transition={{
+              duration: 0.8,
+              delay: 0.25,
+              ease: [0.25, 1, 0.5, 1],
+            }}
+            className="w-[95px]
+  sm:w-[140px]
+  md:w-[200px]
+  lg:max-w-[260px] text-center lg:text-left"
+          >
             {/* Badge */}
             <div className="mb-5 flex items-center justify-center gap-2 lg:justify-start">
               <div className="h-[8px] w-[8px] rounded-full bg-[#FF5B5B]" />
@@ -177,33 +241,48 @@ export default function Live() {
             </p>
 
             <div className="mt-6 h-[2px] w-[50px] bg-[#FFB5B5] mx-auto lg:mx-0" />
-          </div>
+          </motion.div>
         </div>
 
         {/* Floating Hearts */}
-        <div
-          className="
-            absolute
-            bottom-[10px]
-            md:bottom-[80px]
-            lg:bottom-[140px]
-            right-[20px]
+        <motion.div
+  initial={{
+    opacity: 0,
+    x: 80,
+  }}
+  whileInView={{
+    opacity: 0.85,
+    x: 0,
+  }}
+  
+  viewport={{
+    once: false,
+    amount: 0.3,
+  }}
+  transition={{
+    duration: 1,
+    delay: 0.4,
+    ease: [0.25, 1, 0.5, 1],
+  }}
+  className="
+    absolute
+    bottom-[10px]
+    md:bottom-[80px]
+    lg:bottom-[140px]
+    right-[20px]
 
-            md:bottom-[80px]
-            md:right-[50px]
+    md:right-[50px]
+    lg:right-[90px]
 
-            lg:bottom-[140px]
-            lg:right-[90px]
+    scale-[0.7]
+    md:scale-[0.85]
+    lg:scale-100
 
-            scale-[0.7]
-            md:scale-[0.85]
-            lg:scale-100
-
-            h-[120px]
-            w-[120px]
-            opacity-85
-          "
-        >
+    h-[120px]
+    w-[120px]
+    opacity-85
+  "
+>
           <Image
             src="/images/figma/Heart.png"
             alt="heart"
@@ -279,7 +358,7 @@ export default function Live() {
             "
             style={{ height: 'auto' }}
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,5 +1,8 @@
+'use client';
+
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Vibe() {
   return (
@@ -43,13 +46,29 @@ max-md:gap-[5px]
           "
         >
           {/* Left Content */}
-          <div
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: -80,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            viewport={{
+              once: false,
+              amount: 0.2,
+            }}
+            transition={{
+              duration: 0.8,
+              ease: [0.25, 1, 0.5, 1],
+            }}
             className="
-            max-w-[280px]
-            max-md:max-w-[260px]
-max-md:mx-auto
-max-md:text-center
-          "
+    max-w-[280px]
+    max-md:max-w-[260px]
+    max-md:mx-auto
+    max-md:text-center
+  "
           >
             {/* Badge */}
             <div className="mb-5 inline-flex rounded-full bg-[#DCE8FF] px-4 py-2">
@@ -136,7 +155,7 @@ max-md:px-[4px]
                 />
               </div>
             </button>
-          </div>
+          </motion.div>
 
           {/* Phones */}
           <div
@@ -247,71 +266,137 @@ max-md:justify-center
             </div>
 
             {/* PHONE 1 */}
-            <Image
-              src="/images/figma/Vibe0.png"
-              alt="vibe1"
-              width={297}
-              height={608}
-              className="
-    rounded-[28px]
-    object-cover
+            <motion.div
+              initial={{
+                opacity: 0,
+                x: 140,
+                rotate: 8,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                rotate: 0,
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2,
+              }}
+              transition={{
+                duration: 1,
+                delay: 0.35,
+                ease: [0.25, 1, 0.5, 1],
+              }}
+            >
+              <Image
+                src="/images/figma/Vibe0.png"
+                alt="vibe1"
+                width={297}
+                height={608}
+                className="
+      rounded-[28px]
+      object-cover
 
-    max-lg:h-[246px]
-    max-lg:w-[120px]
+      max-lg:h-[246px]
+      max-lg:w-[120px]
 
-    max-lg:absolute
-    max-lg:left-[5px]
-    max-lg:bottom-[25px]
-    max-lg:rotate-[-10deg]
-  "
-            />
+      max-lg:absolute
+      max-lg:left-[5px]
+      max-lg:bottom-[25px]
+      max-lg:rotate-[-10deg]
+    "
+              />
+            </motion.div>
 
             {/* PHONE 2 */}
-            <Image
-              src="/images/figma/Vibes1.png"
-              alt="vibe2"
-              width={310}
-              height={650}
-              className="
-                rounded-[28px]
-                object-cover
+            <motion.div
+              initial={{
+                opacity: 0,
+                scale: 0.75,
+                y: 50,
+              }}
+              whileInView={{
+                opacity: 1,
+                scale: 1,
+                y: 0,
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2,
+              }}
+              transition={{
+                duration: 1,
+                delay: 0.15,
+                ease: [0.25, 1, 0.5, 1],
+              }}
+            >
+              <Image
+                src="/images/figma/Vibes1.png"
+                alt="vibe2"
+                width={310}
+                height={650}
+                className="
+      rounded-[28px]
+      object-cover
 
-                max-lg:h-[314px]
-                max-lg:w-[150px]
+      max-lg:h-[314px]
+      max-lg:w-[150px]
 
-                max-lg:absolute
-                max-lg:left-1/2
-                max-lg:bottom-[20px]
-                max-lg:-translate-x-1/2
-                max-lg:z-20
-              "
-            />
+      max-lg:absolute
+      max-lg:left-1/2
+      max-lg:bottom-[20px]
+      max-lg:-translate-x-1/2
+      max-lg:z-20
+    "
+              />
+            </motion.div>
 
             {/* PHONE 3 */}
-            <Image
-              src="/images/figma/Vibes3.png"
-              alt="vibe3"
-              width={297}
-              height={608}
-              className="
-    rounded-[28px]
-    object-cover
+            <motion.div
+              initial={{
+                opacity: 0,
+                x: -140,
+                rotate: -8,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                rotate: 0,
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2,
+              }}
+              transition={{
+                duration: 1,
+                delay: 0.35,
+                ease: [0.25, 1, 0.5, 1],
+              }}
+            >
+              <Image
+                src="/images/figma/Vibes3.png"
+                alt="vibe3"
+                width={297}
+                height={608}
+                className="
+      rounded-[28px]
+      object-cover
 
-    max-lg:h-[245px]
-    max-lg:w-[120px]
+      max-lg:h-[245px]
+      max-lg:w-[120px]
 
-    max-lg:absolute
-    max-lg:right-[5px]
-    max-lg:bottom-[25px]
-    max-lg:rotate-[10deg]
-  "
-            />
+      max-lg:absolute
+      max-lg:right-[5px]
+      max-lg:bottom-[25px]
+      max-lg:rotate-[10deg]
+    "
+              />
+            </motion.div>
 
             {/* BOTTOM CARD */}
             <div
               className="
                 absolute
-                bottom-[-6px]
+                bottom-[-10px]
                 left-[260px]
                 z-20
                 flex
@@ -319,7 +404,7 @@ max-md:justify-center
                 gap-2
 
                 max-lg:left-1/2
-                max-lg:bottom-[-15px]
+                max-lg:bottom-[-25px]
                 max-lg:-translate-x-1/2
               "
             >
@@ -327,17 +412,17 @@ max-md:justify-center
                 src="https://images.unsplash.com/photo-1654110455429-cf322b40a906?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="profile"
                 className="
-                  h-[38px]
-                  w-[38px]
+                 h-[42px]
+                  w-[42px]
                   rounded-full
                   object-cover
 
-                  max-lg:h-[28px]
-                  max-lg:w-[28px]
+                  max-lg:h-[20px]
+                  max-lg:w-[20px]
                 "
               />
 
-              <div className="rounded-50% bg-[#DDD2FF] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-2">
+              <div className="rounded-full bg-[#F6C9CD] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
                 <p className="max-lg:max-w-[70px] max-lg:text-center text-[9px] text-[#5B4A8A] max-lg:text-[6px]">
                   best recipe will surely try it
                 </p>

@@ -1,4 +1,7 @@
+'use client';
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Posts() {
   return (
@@ -27,7 +30,25 @@ export default function Posts() {
         "
       >
         {/* Top Content */}
-        <div className="text-center">
+        <motion.div
+          className="text-center"
+          initial={{
+            opacity: 0,
+            y: 40,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: false,
+            amount: 0.2,
+          }}
+          transition={{
+            duration: 0.8,
+            ease: [0.25, 1, 0.5, 1],
+          }}
+        >
 
           {/* Badge */}
           <div className="inline-flex rounded-full bg-[#F2F0FF] px-4 py-2 text-[13px] font-medium text-[#287BFF]">
@@ -89,17 +110,57 @@ export default function Posts() {
             brings the world closer with communities
             that feel like home.
           </p>
-        </div>
+        </motion.div>
 
         {/* Image Grid */}
         <div className="mt-12 hidden lg:flex items-start justify-center gap-5">
 
           {/* Left Side */}
-          <div className="flex gap-4">
+          <motion.div
+            className="flex gap-4"
+            initial={{
+              opacity: 0,
+              x: -120,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            viewport={{
+              once: false,
+              amount: 0.2,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.35,
+              ease: [0.25, 1, 0.5, 1],
+            }}
+          >
 
             {/* Left Column */}
             <div className="flex flex-col gap-4 pt-[15px]">
-              <div className="relative">
+              <motion.div
+                className="relative"
+                initial={{
+                  opacity: 0,
+                  scale: 0.82,
+                  y: 30,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: false,
+                  amount: 0.2,
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0.2,
+                  ease: [0.25, 1, 0.5, 1],
+                }}
+              >
                 <Image
                   src="/images/figma/P1.png"
                   alt="post"
@@ -137,7 +198,7 @@ export default function Posts() {
                     📍 Seoul, South Korea
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
               <div className="relative">
                 <Image
@@ -268,7 +329,7 @@ export default function Posts() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Center Big Image */}
           <div className="relative">
@@ -361,7 +422,26 @@ export default function Posts() {
           </div>
 
           {/* Right Side */}
-          <div className="flex gap-4">
+          <motion.div
+            className="flex gap-4"
+            initial={{
+              opacity: 0,
+              x: 120,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            viewport={{
+              once: false,
+              amount: 0.2,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.35,
+              ease: [0.25, 1, 0.5, 1],
+            }}
+          >
 
             {/* Right Side */}
             <div className="flex flex-col gap-4 pt-[20px]">
@@ -523,7 +603,7 @@ export default function Posts() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
         </div>
 

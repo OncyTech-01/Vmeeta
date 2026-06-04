@@ -489,7 +489,7 @@ export default function Forum() {
   "
             >
               <Image
-                src="/images/figma/ForumBigPhone.png"
+                src="/images/figma/ForumBigPhone1.png"
                 alt="forum phone"
                 width={324}
                 height={709}

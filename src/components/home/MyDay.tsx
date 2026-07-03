@@ -393,7 +393,7 @@ export default function MyDay() {
               </div>
 
               {/* Center bubble with overlapping avatar */}
-              <div className="absolute left-1/2 top-[calc(100%+12px)] z-20 -translate-x-1/2">
+              <div className="absolute left-1/2 top-[calc(98%)] z-20 -translate-x-1/2">
                 <img src="https://i.pravatar.cc/40?img=47" alt="avatar" className="mx-auto mb-2 h-8 w-8 rounded-full ring-2 ring-white object-cover" />
                 <div className="mx-auto max-w-[260px] rounded-full bg-[#F1E6FF] px-4 py-2 text-[11px] font-medium text-[#4B2F77] shadow-lg">
                   Greetings from korea.

@@ -480,19 +480,19 @@ function CommentsWidget() {
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
       className="
         absolute
-        right-6
+        right-8
         bottom-[46px]
         w-[175px]
 
-        sm:right-8
+        sm:right-10
         sm:bottom-[60px]
         sm:w-[260px]
 
-        md:right-10
+        md:right-12
         md:bottom-[70px]
         md:w-[320px]
 
-        lg:right-[50px]
+        lg:right-[80px]
         lg:bottom-[90px]
         lg:w-[400px]
 

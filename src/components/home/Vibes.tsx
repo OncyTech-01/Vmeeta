@@ -175,7 +175,7 @@ export default function Vibe() {
                 className="
                   absolute
                   left-[10px]
-                  top-[-40px]
+                  top-[-60px]
                   z-40
                   flex
                   items-center
@@ -312,7 +312,7 @@ export default function Vibe() {
                 className="
                   absolute
                   right-[10px]
-                  top-[-40px]
+                  top-[-60px]
                   z-40
                   flex
                   items-center

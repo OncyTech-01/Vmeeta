@@ -38,7 +38,7 @@ export default function ChatVC() {
         <div className="absolute inset-0 bg-black/20" />
 
         {/* Floating Chat Bubble 1 */}
-        <div
+        {/* <div
           className="
     absolute
     left-[25%]
@@ -57,27 +57,29 @@ export default function ChatVC() {
         >
           <div
             className="
-      rounded-[4px]
+      relative
+      rounded-[18px]
       bg-[#7A655A]/90
-      px-1
-      py-[2px]
+      px-2
+      py-[6px]
       shadow-lg
       backdrop-blur-sm
 
-      md:px-2
-      md:py-1
+      md:px-3
+      md:py-2
     "
           >
-            <div className="flex items-center gap-1 md:gap-2">
+            <div className="absolute left-3 top-[-6px] h-3 w-3 rotate-45 rounded-br-[6px] bg-[#7A655A]/90" />
+            <div className="flex items-center gap-2 md:gap-3">
               <p
                 className="
-          text-[4px]
+          text-[6px]
           font-semibold
           text-white
 
-          sm:text-[5px]
+          sm:text-[7px]
 
-          md:text-[8px]
+          md:text-[9px]
 
           lg:text-[10px]
         "
@@ -87,9 +89,9 @@ export default function ChatVC() {
 
               <span
                 className="
-          text-[4px]
-          sm:text-[5px]
-          md:text-[8px]
+          text-[6px]
+          sm:text-[7px]
+          md:text-[9px]
           lg:text-[10px]
         "
               >
@@ -99,14 +101,14 @@ export default function ChatVC() {
 
             <p
               className="
-        mt-[2px]
+        mt-[4px]
         text-right
-        text-[3px]
+        text-[5px]
         text-white/70
 
-        sm:text-[4px]
+        sm:text-[6px]
 
-        md:text-[6px]
+        md:text-[8px]
 
         lg:text-[8px]
       "
@@ -114,10 +116,10 @@ export default function ChatVC() {
               10:30 PM
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* Floating Chat Bubble 2 */}
-        <div
+        {/* <div
           className="
     absolute
     left-[32%]
@@ -136,26 +138,28 @@ export default function ChatVC() {
         >
           <div
             className="
-      rounded-[4px]
+      relative
+      rounded-[18px]
       bg-[#2488FF]
-      px-1
-      py-[2px]
+      px-2
+      py-[6px]
       shadow-xl
 
-      md:px-2
-      md:py-1
+      md:px-3
+      md:py-2
     "
           >
-            <div className="flex items-center gap-1 md:gap-2">
+            <div className="absolute right-3 bottom-[-6px] h-3 w-3 rotate-45 rounded-tl-[6px] bg-[#2488FF]" />
+            <div className="flex items-center gap-2 md:gap-3">
               <p
                 className="
-          text-[4px]
+          text-[6px]
           font-bold
           text-white
 
-          sm:text-[5px]
+          sm:text-[7px]
 
-          md:text-[8px]
+          md:text-[9px]
 
           lg:text-[10px]
         "
@@ -165,9 +169,9 @@ export default function ChatVC() {
 
               <span
                 className="
-          text-[4px]
-          sm:text-[5px]
-          md:text-[8px]
+          text-[6px]
+          sm:text-[7px]
+          md:text-[9px]
           lg:text-[10px]
         "
               >
@@ -177,14 +181,14 @@ export default function ChatVC() {
 
             <p
               className="
-        mt-[2px]
+        mt-[4px]
         text-right
-        text-[3px]
+        text-[5px]
         text-white/70
 
-        sm:text-[4px]
+        sm:text-[6px]
 
-        md:text-[6px]
+        md:text-[8px]
 
         lg:text-[8px]
       "
@@ -192,7 +196,195 @@ export default function ChatVC() {
               10:30 PM
             </p>
           </div>
-        </div>
+        </div> */}
+
+{/* Floating Chat Bubble 1 (received) */}
+<div
+  className="
+    absolute
+    left-[25%]
+    top-[45px]
+    z-20
+
+    sm:left-[46%]
+    sm:top-[14px]
+
+    md:left-[35%]
+    md:top-[70px]
+
+    lg:left-[33%]
+    lg:top-[120px]
+  "
+>
+  <div
+    className="
+      relative
+      rounded-[18px]
+      rounded-tl-[4px]
+      bg-[#7A655A]/90
+      px-2
+      py-[6px]
+      shadow-lg
+      backdrop-blur-sm
+
+      md:px-3
+      md:py-2
+    "
+  >
+    {/* tail: small curl coming off the top-left corner */}
+    <span
+      className="
+        absolute
+        -left-[6px]
+        top-0
+        h-[10px]
+        w-[10px]
+        bg-[#7A655A]/90
+        [clip-path:polygon(100%_0,100%_100%,0_0)]
+      "
+    />
+
+    <div className="flex items-center gap-2 md:gap-3">
+      <p
+        className="
+          text-[6px]
+          font-semibold
+          text-white
+
+          sm:text-[7px]
+
+          md:text-[9px]
+
+          lg:text-[10px]
+        "
+      >
+        Miss You
+      </p>
+
+      <span
+        className="
+          text-[6px]
+          sm:text-[7px]
+          md:text-[9px]
+          lg:text-[10px]
+        "
+      >
+        ❤️
+      </span>
+    </div>
+
+    <p
+      className="
+        mt-[4px]
+        text-right
+        text-[5px]
+        text-white/70
+
+        sm:text-[6px]
+
+        md:text-[8px]
+
+        lg:text-[8px]
+      "
+    >
+      10:23 PM
+    </p>
+  </div>
+</div>
+
+{/* Floating Chat Bubble 2 (sent) */}
+<div
+  className="
+    absolute
+    left-[32%]
+    top-[65px]
+    z-20
+
+    sm:left-[45%]
+    sm:top-[60px]
+
+    md:left-[38%]
+    md:top-[120px]
+
+    lg:left-[37%]
+    lg:top-[190px]
+  "
+>
+  <div
+    className="
+      relative
+      rounded-[18px]
+      rounded-br-[4px]
+      bg-[#2488FF]
+      px-2
+      py-[6px]
+      shadow-xl
+
+      md:px-3
+      md:py-2
+    "
+  >
+    {/* tail: small curl coming off the bottom-right corner */}
+    <span
+      className="
+        absolute
+        -right-[6px]
+        bottom-0
+        h-[10px]
+        w-[10px]
+        bg-[#2488FF]
+        [clip-path:polygon(0_100%,0_0,100%_100%)]
+      "
+    />
+
+    <div className="flex items-center gap-2 md:gap-3">
+      <p
+        className="
+          text-[6px]
+          font-bold
+          text-white
+
+          sm:text-[7px]
+
+          md:text-[9px]
+
+          lg:text-[10px]
+        "
+      >
+        Miss You too
+      </p>
+
+      <span
+        className="
+          text-[6px]
+          sm:text-[7px]
+          md:text-[9px]
+          lg:text-[10px]
+        "
+      >
+        ❤️
+      </span>
+    </div>
+
+    <p
+      className="
+        mt-[4px]
+        text-right
+        text-[5px]
+        text-white/70
+
+        sm:text-[6px]
+
+        md:text-[8px]
+
+        lg:text-[8px]
+      "
+    >
+      10:50 PM
+    </p>
+  </div>
+</div>
+        
 
         {/* Main Content */}
         <div

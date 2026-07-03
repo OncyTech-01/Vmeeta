@@ -98,25 +98,25 @@ export default function Forum() {
             {/* Heading */}
             <h2
               className="
-              text-[34px]
-              leading-[38px]
+    text-[34px]
+    leading-[38px]
 
-              md:text-[48px]
-              md:leading-[54px]
+    md:text-[48px]
+    md:leading-[54px]
 
-              lg:text-[64px]
-              lg:leading-[70px]
+    lg:text-[64px]
+    lg:leading-[70px]
 
-              font-bold
-              text-black
-            "
+    font-semibold
+    text-black
+  "
             >
               Every
               <br />
-              interest has
+              <span className="whitespace-nowrap">interest has</span>
               <br />
               its{" "}
-              <span className="text-[#2678FD]">
+              <span className="text-[#2678FD] whitespace-nowrap">
                 people.
               </span>
             </h2>

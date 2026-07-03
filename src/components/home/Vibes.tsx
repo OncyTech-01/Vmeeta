@@ -12,12 +12,12 @@ export default function Vibe() {
           relative
 
     md:w-full
-md:max-w-[1410px]
-md:h-[753px]
+    md:max-w-[1410px]
+    md:h-[753px]
 
-max-md:w-full
-max-md:max-w-[445px]
-max-md:min-h-[542px]
+    max-md:w-full
+    max-md:max-w-[445px]
+    max-md:min-h-[542px]
 
     overflow-hidden
     rounded-[30px]
@@ -41,34 +41,22 @@ max-md:min-h-[542px]
             gap-[80px]
 
             max-md:flex-col
-max-md:justify-start
-max-md:gap-[5px]
+            max-md:justify-start
+            max-md:gap-[5px]
           "
         >
           {/* Left Content */}
           <motion.div
-            initial={{
-              opacity: 0,
-              x: -80,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            viewport={{
-              once: true,
-              amount: 0.2,
-            }}
-            transition={{
-              duration: 0.8,
-              ease: [0.25, 1, 0.5, 1],
-            }}
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
             className="
-    max-w-[280px]
-    max-md:max-w-[260px]
-    max-md:mx-auto
-    max-md:text-center
-  "
+              max-w-[280px]
+              max-md:max-w-[260px]
+              max-md:mx-auto
+              max-md:text-center
+            "
           >
             {/* Badge */}
             <div className="mb-5 inline-flex rounded-full bg-[#DCE8FF] px-4 py-2">
@@ -80,22 +68,20 @@ max-md:gap-[5px]
             {/* Heading */}
             <h2
               className="
-              text-[45px]
-              font-bold
-              leading-[50px]
-              text-black
+                text-[45px]
+                font-bold
+                leading-[50px]
+                text-black
 
-              max-md:text-[24px]
-max-md:leading-[26px]
-max-md:tracking-[-1px]
-  "
+                max-md:text-[24px]
+                max-md:leading-[26px]
+                max-md:tracking-[-1px]
+              "
             >
               Find people
               <br />
               who feel like{" "}
-              <span className="text-[#3B82F6]">
-                home.
-              </span>
+              <span className="text-[#3B82F6]">home.</span>
             </h2>
 
             {/* Description */}
@@ -107,8 +93,8 @@ max-md:tracking-[-1px]
                 text-[#5F6368]
 
                 max-md:text-[10px]
-max-md:leading-[12px]
-max-md:px-[4px]
+                max-md:leading-[12px]
+                max-md:px-[4px]
               "
             >
               From creators and travelers
@@ -137,296 +123,257 @@ max-md:px-[4px]
               "
             >
               Start Exploring
-
-              <div
-                className="
-                  flex
-                  h-[20px]
-                  w-[20px]
-                  items-center
-                  justify-center
-                  rounded-full
-                  bg-white
-                "
-              >
-                <ArrowRight
-                  size={14}
-                  className="text-[#2D79F5]"
-                />
+              <div className="flex h-[20px] w-[20px] items-center justify-center rounded-full bg-white">
+                <ArrowRight size={14} className="text-[#2D79F5]" />
               </div>
             </button>
           </motion.div>
 
-          {/* Phones */}
+          {/* Phones Row */}
           <div
             className="
               relative
-              -ml-[10px]
               flex
               items-center
               gap-4
-
+           
               max-md:w-full
-max-md:h-[330px]
-max-md:mt-[25px]
-max-md:justify-center
+              max-md:h-[170px]
+              max-md:mt-[25px]
+              max-md:justify-center
             "
           >
-            {/* TOP LEFT CARD */}
-            <div
-              className="
-                absolute
-                left-[30px]
-                top-[0px]
-                z-20
-                flex
-                items-center
-                gap-2
-
-                max-lg:left-[-10px]
-                max-lg:top-[-5px]
-              "
-            >
-              <img
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="profile"
-                className="
-                  h-[42px]
-                  w-[42px]
-                  rounded-full
-                  object-cover
-
-                  max-lg:h-[20px]
-                  max-lg:w-[20px]
-                "
-              />
-
-              <div className="rounded-full bg-[#F6C9CD] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
-                <p className="whitespace-nowrap text-[11px] text-[#5F4A4A] max-lg:text-[6px]">
-                  Super cool dance bro 🖤
-                </p>
-              </div>
-            </div>
-
-            {/* HEART */}
+            {/* Heart, floats above center — positioned relative to whole row */}
             <Image
               src="/images/figma/V2.png"
               alt="top-heart"
-              width={28}
-              height={28}
+              width={32}
+              height={32}
               className="
                 absolute
-                left-[650px]
-                top-[-1px]
-                z-20
+                left-1/2
+                top-[-28px]
+                z-40
+                -translate-x-1/2
                 object-contain
+                w-[32px]
+                h-[32px]
+                drop-shadow-md
 
                 max-lg:right-[50px]
                 max-lg:left-auto
                 max-lg:top-[-30px]
                 max-lg:w-[18px]
               "
-              style={{ height: 'auto' }}
+              style={{ height: "auto" }}
             />
 
-            {/* TOP RIGHT CARD */}
-            <div
-              className="
-                absolute
-                right-[-5px]
-                top-[15px]
-                z-20
-                flex
-                items-center
-                gap-2
+            {/* PHONE 1 wrapper (its own relative context) */}
+            <div className="relative">
+              {/* TOP LEFT CARD — anchored to PHONE 1 */}
+              <div
+                className="
+                  absolute
+                  left-[10px]
+                  top-[-40px]
+                  z-40
+                  flex
+                  items-center
+                  gap-3
 
-                max-lg:right-[14px]
-                max-lg:top-[15px]
-              "
-            >
-              <div className="rounded-full bg-[#DDD2FF] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
-                <p className="whitespace-nowrap text-[11px] text-[#5B4A8A] max-lg:text-[6px]">
-                  You look cute.
-                </p>
+                  max-lg:left-[-6px]
+                  max-lg:top-[-30px]
+                "
+              >
+                <div className="rounded-full bg-white p-[2px] shadow-sm">
+                  <img
+                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="profile"
+                    className="
+                      h-[48px]
+                      w-[48px]
+                      rounded-full
+                      object-cover
+                      ring-2
+                      ring-white
+                      border-2
+                      border-[#3B82F6]
+
+                      max-lg:h-[22px]
+                      max-lg:w-[22px]
+                    "
+                  />
+                </div>
+
+                <div className="rounded-full bg-[#F6C9CD] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
+                  <p className="whitespace-nowrap text-[12px] text-[#5F4A4A] max-lg:text-[6px]">
+                    Your form is perfect
+                  </p>
+                </div>
               </div>
 
-              <img
-                src="https://images.unsplash.com/photo-1658932447761-8a59cd02d201?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="profile"
-                className="
-                  h-[42px]
-                  w-[42px]
-                  rounded-full
-                  object-cover
+              <motion.div
+                initial={{ opacity: 0, x: 140, rotate: 8 }}
+                whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 1, delay: 0.35, ease: [0.25, 1, 0.5, 1] }}
+              >
+                <Image
+                  src="/images/figma/Vibe0.png"
+                  alt="vibe1"
+                  width={297}
+                  height={608}
+                  className="
+                    rounded-[28px]
+                    object-cover
 
-                  max-lg:h-[20px]
-                  max-lg:w-[20px]
-                "
-              />
+                    max-lg:h-[246px]
+                    max-lg:w-[120px]
+
+                    max-lg:absolute
+                    max-lg:left-[5px]
+                    max-lg:bottom-[25px]
+                    max-lg:rotate-[-10deg]
+                  "
+                />
+              </motion.div>
             </div>
 
-            {/* PHONE 1 */}
-            <motion.div
-              initial={{
-                opacity: 0,
-                x: 140,
-                rotate: 8,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                rotate: 0,
-              }}
-              viewport={{
-                once: true,
-                amount: 0.2,
-              }}
-              transition={{
-                duration: 1,
-                delay: 0.35,
-                ease: [0.25, 1, 0.5, 1],
-              }}
-            >
-              <Image
-                src="/images/figma/Vibe0.png"
-                alt="vibe1"
-                width={297}
-                height={608}
+            {/* PHONE 2 wrapper */}
+            <div className="relative">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.75, y: 50 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 1, delay: 0.15, ease: [0.25, 1, 0.5, 1] }}
+              >
+                <Image
+                  src="/images/figma/Vibes1.png"
+                  alt="vibe2"
+                  width={310}
+                  height={650}
+                  className="
+                    rounded-[28px]
+                    object-cover
+
+                    max-lg:h-[314px]
+                    max-lg:w-[150px]
+
+                    max-lg:absolute
+                    max-lg:left-1/2
+                    max-lg:bottom-[20px]
+                    max-lg:-translate-x-1/2
+                    max-lg:z-20
+                  "
+                />
+              </motion.div>
+
+              {/* BOTTOM CARD — anchored to PHONE 2 */}
+              <div
                 className="
-      rounded-[28px]
-      object-cover
+                  absolute
+                  bottom-[-45px]
+                  left-1/2
+                  -translate-x-1/2
+                  z-20
+                  flex
+                  items-center
+                  gap-2
 
-      max-lg:h-[246px]
-      max-lg:w-[120px]
-
-      max-lg:absolute
-      max-lg:left-[5px]
-      max-lg:bottom-[25px]
-      max-lg:rotate-[-10deg]
-    "
-              />
-            </motion.div>
-
-            {/* PHONE 2 */}
-            <motion.div
-              initial={{
-                opacity: 0,
-                scale: 0.75,
-                y: 50,
-              }}
-              whileInView={{
-                opacity: 1,
-                scale: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: true,
-                amount: 0.2,
-              }}
-              transition={{
-                duration: 1,
-                delay: 0.15,
-                ease: [0.25, 1, 0.5, 1],
-              }}
-            >
-              <Image
-                src="/images/figma/Vibes1.png"
-                alt="vibe2"
-                width={310}
-                height={650}
-                className="
-      rounded-[28px]
-      object-cover
-
-      max-lg:h-[314px]
-      max-lg:w-[150px]
-
-      max-lg:absolute
-      max-lg:left-1/2
-      max-lg:bottom-[20px]
-      max-lg:-translate-x-1/2
-      max-lg:z-20
-    "
-              />
-            </motion.div>
-
-            {/* PHONE 3 */}
-            <motion.div
-              initial={{
-                opacity: 0,
-                x: -140,
-                rotate: -8,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                rotate: 0,
-              }}
-              viewport={{
-                once: true,
-                amount: 0.2,
-              }}
-              transition={{
-                duration: 1,
-                delay: 0.35,
-                ease: [0.25, 1, 0.5, 1],
-              }}
-            >
-              <Image
-                src="/images/figma/Vibes3.png"
-                alt="vibe3"
-                width={297}
-                height={608}
-                className="
-      rounded-[28px]
-      object-cover
-
-      max-lg:h-[245px]
-      max-lg:w-[120px]
-
-      max-lg:absolute
-      max-lg:right-[5px]
-      max-lg:bottom-[25px]
-      max-lg:rotate-[10deg]
-    "
-              />
-            </motion.div>
-
-            {/* BOTTOM CARD */}
-            <div
-              className="
-                absolute
-                bottom-[-10px]
-                left-[260px]
-                z-20
-                flex
-                items-center
-                gap-2
-
-                max-lg:left-1/2
-                max-lg:bottom-[-25px]
-                max-lg:-translate-x-1/2
-              "
-            >
-              <img
-                src="https://images.unsplash.com/photo-1654110455429-cf322b40a906?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="profile"
-                className="
-                 h-[42px]
-                  w-[42px]
-                  rounded-full
-                  object-cover
-
-                  max-lg:h-[20px]
-                  max-lg:w-[20px]
+                  max-lg:bottom-[-25px]
                 "
-              />
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1654110455429-cf322b40a906?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="profile"
+                  className="
+                    h-[42px]
+                    w-[42px]
+                    rounded-full
+                    object-cover
 
-              <div className="rounded-full bg-[#F6C9CD] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
-                <p className="max-lg:max-w-[70px] max-lg:text-center text-[9px] text-[#5B4A8A] max-lg:text-[6px]">
-                  best recipe will surely try it
-                </p>
+                    max-lg:h-[20px]
+                    max-lg:w-[20px]
+                  "
+                />
+
+                <div className="rounded-full bg-[#F6C9CD] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
+                  <p className="max-lg:max-w-[70px] max-lg:text-center whitespace-nowrap text-[9px] text-[#5B4A8A] max-lg:text-[6px]">
+                    Best recipe I will surely try it
+                  </p>
+                </div>
               </div>
+            </div>
+
+            {/* PHONE 3 wrapper */}
+            <div className="relative">
+              {/* TOP RIGHT CARD — anchored to PHONE 3 */}
+              <div
+                className="
+                  absolute
+                  right-[10px]
+                  top-[-40px]
+                  z-40
+                  flex
+                  items-center
+                  gap-3
+
+                  max-lg:right-[14px]
+                  max-lg:top-[-30px]
+                "
+              >
+                <div className="rounded-full bg-[#DDD2FF] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
+                  <p className="whitespace-nowrap text-[12px] text-[#5B4A8A] max-lg:text-[6px]">
+                    Super cool dance boi ❤️
+                  </p>
+                </div>
+
+                <div className="rounded-full bg-white p-[2px] shadow-sm">
+                  <img
+                    src="https://images.unsplash.com/photo-1658932447761-8a59cd02d201?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="profile"
+                    className="
+                      h-[48px]
+                      w-[48px]
+                      rounded-full
+                      object-cover
+                      ring-2
+                      ring-white
+                      border-2
+                      border-[#3B82F6]
+
+                      max-lg:h-[22px]
+                      max-lg:w-[22px]
+                    "
+                  />
+                </div>
+              </div>
+
+              <motion.div
+                initial={{ opacity: 0, x: -140, rotate: -8 }}
+                whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 1, delay: 0.35, ease: [0.25, 1, 0.5, 1] }}
+              >
+                <Image
+                  src="/images/figma/Vibes3.png"
+                  alt="vibe3"
+                  width={297}
+                  height={608}
+                  className="
+                    rounded-[28px]
+                    object-cover
+
+                    max-lg:h-[245px]
+                    max-lg:w-[120px]
+
+                    max-lg:absolute
+                    max-lg:right-[5px]
+                    max-lg:bottom-[25px]
+                    max-lg:rotate-[10deg]
+                  "
+                />
+              </motion.div>
             </div>
           </div>
         </div>
@@ -434,3 +381,5 @@ max-md:justify-center
     </section>
   );
 }
+
+

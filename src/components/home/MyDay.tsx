@@ -204,11 +204,14 @@ export default function MyDay() {
                 height={28}
                 className="
                             absolute
-                            left-[400px]
+                            left-1/2
                             top-[-20px]
                             z-20
+                            -translate-x-1/2
                             object-contain
-            
+                            w-[28px]
+                            h-[28px]
+
                             max-lg:right-[50px]
                             max-lg:left-auto
                             max-lg:top-[-50px]
@@ -220,7 +223,8 @@ export default function MyDay() {
               {/* CARD 1 */}
               <div
                 className={`
-        relative min-w-fit shrink-0 overflow-hidden rounded-[20px]
+        relative shrink-0 overflow-hidden rounded-[20px]
+        w-[243px] h-[364px]
         ${currentCard === 0 ? "block" : "hidden"}
         md:block
       `}
@@ -229,23 +233,8 @@ export default function MyDay() {
                   src="/images/figma/MyD1.png"
                   alt="myday1"
                   width={243}
-                  height={350}
-                  className="
-                    h-[30vw]
-                  w-[20vw]
-
-                  min-h-[176px]
-                  min-w-[117px]
-
-                  max-h-[230px]
-                  max-w-[170px]
-
-                  md:h-[350px]
-                  md:w-[243px]
-
-                  rounded-[20px]
-                  object-cover
-                  "
+                  height={364}
+                  className="rounded-[20px] object-cover w-full h-full"
                 />
 
                 {/* Story Progress */}
@@ -290,7 +279,8 @@ export default function MyDay() {
               {/* CARD 2 */}
               <div
                 className={`
-        relative min-w-fit shrink-0 overflow-hidden rounded-[20px]
+        relative shrink-0 overflow-hidden rounded-[20px]
+        w-[243px] h-[364px]
         ${currentCard === 1 ? "block" : "hidden"}
         md:block
       `}
@@ -299,23 +289,8 @@ export default function MyDay() {
                   src="/images/figma/MyD2.png"
                   alt="myday2"
                   width={243}
-                  height={350}
-                  className="
-                   h-[30vw]
-                  w-[20vw]
-
-                  min-h-[176px]
-                  min-w-[117px]
-
-                  max-h-[230px]
-                  max-w-[170px]
-
-                  md:h-[350px]
-                  md:w-[243px]
-
-                  rounded-[20px]
-                  object-cover
-                  "
+                  height={364}
+                  className="rounded-[20px] object-cover w-full h-full"
                 />
 
                 <div className="absolute left-4 right-4 top-5 z-20 flex gap-1">
@@ -358,7 +333,8 @@ export default function MyDay() {
               {/* CARD 3 */}
               <div
                 className={`
-        relative min-w-fit shrink-0 overflow-hidden rounded-[20px]
+        relative shrink-0 overflow-hidden rounded-[20px]
+        w-[243px] h-[364px]
         ${currentCard === 2 ? "block" : "hidden"}
         md:block
       `}
@@ -367,23 +343,8 @@ export default function MyDay() {
                   src="/images/figma/MyD3.png"
                   alt="myday3"
                   width={243}
-                  height={350}
-                  className="
-                    h-[30vw]
-                  w-[20vw]
-
-                  min-h-[176px]
-                  min-w-[117px]
-
-                  max-h-[230px]
-                  max-w-[170px]
-
-                  md:h-[350px]
-                  md:w-[243px]
-
-                  rounded-[20px]
-                  object-cover
-                  "
+                  height={364}
+                  className="rounded-[20px] object-cover w-full h-full"
                 />
 
                 <div className="absolute left-3 right-3 top-3 z-20 flex gap-1">
@@ -422,6 +383,30 @@ export default function MyDay() {
                   </p>
                 </div>
 
+              </div>
+
+              {/* WIDGETS */}
+              {/* Left pill under left card */}
+              <div className="absolute left-[6px] top-[calc(100%+12px)] z-20 flex items-center gap-2 rounded-full bg-[#FFE4ED] px-3 py-2 text-[11px] font-semibold text-[#A21249] shadow-lg">
+                <img src="https://i.pravatar.cc/40?img=32" alt="avatar" className="h-6 w-6 rounded-full ring-2 ring-white object-cover" />
+                <span>Super cool</span>
+              </div>
+
+              {/* Center bubble with overlapping avatar */}
+              <div className="absolute left-1/2 top-[calc(100%+12px)] z-20 -translate-x-1/2">
+                <img src="https://i.pravatar.cc/40?img=47" alt="avatar" className="mx-auto mb-2 h-8 w-8 rounded-full ring-2 ring-white object-cover" />
+                <div className="mx-auto max-w-[260px] rounded-full bg-[#F1E6FF] px-4 py-2 text-[11px] font-medium text-[#4B2F77] shadow-lg">
+                  Greetings from korea.
+                </div>
+              </div>
+
+              {/* Right top badge with small progress bar */}
+              <div className="absolute right-0 top-[-64px] z-30 flex flex-col items-end gap-2">
+                <div className="flex items-center gap-2 rounded-full bg-[#FFF7D4] px-3 py-2 text-[11px] font-medium text-[#805A00] shadow-lg">
+                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white">👪</span>
+                  <span>Beautiful Family bless you</span>
+                </div>
+                
               </div>
             </div>
           </motion.div>

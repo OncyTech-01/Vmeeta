@@ -418,6 +418,8 @@ function FloatingHearts() {
   return (
     <div
       className="
+        block
+        md:hidden
         absolute
         right-[50px]
         bottom-[60px]
@@ -479,8 +481,8 @@ function CommentsWidget() {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
       className="
-        hidden
-        md:block
+        block
+        md:hidden
         absolute
         right-3
         bottom-[24px]
@@ -700,7 +702,7 @@ export default function Hero() {
       >
         {/* Mobile Image */}
         <Image
-          src="/images/figma/Hero-mobile.png"
+          src="/images/figma/hero-mobile2.png"
           alt="Hero Mobile"
           fill
           priority
@@ -710,7 +712,7 @@ export default function Hero() {
 
         {/* Desktop Image */}
         <Image
-          src="/images/figma/Hero.png"
+          src="/images/figma/Hero-mobile.png"
           alt="Hero"
           fill
           priority

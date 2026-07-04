@@ -203,9 +203,12 @@ export default function ChatVC() {
   className="
     absolute
     left-[25%]
-    top-[45px]
+    top-[10px]
     z-20
+    scale-[0.5]
+    origin-center
 
+    sm:scale-100
     sm:left-[46%]
     sm:top-[14px]
 
@@ -297,9 +300,12 @@ export default function ChatVC() {
   className="
     absolute
     left-[32%]
-    top-[65px]
+    top-[30px]
     z-20
+    scale-[0.5]
+    origin-center
 
+    sm:scale-100
     sm:left-[45%]
     sm:top-[60px]
 

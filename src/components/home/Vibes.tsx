@@ -106,6 +106,7 @@ export default function Vibe() {
             {/* Button */}
             <button
               className="
+                max-md:hidden
                 max-lg:mb-[10px]
                 flex
                 items-center
@@ -127,6 +128,24 @@ export default function Vibe() {
                 <ArrowRight size={14} className="text-[#2D79F5]" />
               </div>
             </button>
+            {/* Mobile Button */}
+            <button
+              className="
+                hidden
+                max-md:flex
+                mx-auto
+                mt-4
+                h-[32px]
+                w-[32px]
+                items-center
+                justify-center
+                rounded-full
+                bg-white
+                shadow-md
+              "
+            >
+              <ArrowRight size={16} className="text-[#3B82F6]" />
+            </button>
           </motion.div>
 
           {/* Phones Row */}
@@ -138,8 +157,8 @@ export default function Vibe() {
               gap-4
            
               max-md:w-full
-              max-md:h-[170px]
-              max-md:mt-[25px]
+              max-md:h-[350px]
+              max-md:mt-[40px]
               max-md:justify-center
             "
           >
@@ -159,17 +178,22 @@ export default function Vibe() {
                 w-[32px]
                 h-[32px]
                 drop-shadow-md
-
-                max-lg:right-[50px]
-                max-lg:left-auto
-                max-lg:top-[-30px]
-                max-lg:w-[18px]
+                hidden md:block
               "
               style={{ height: "auto" }}
             />
 
+            {/* Mobile decorations */}
+            <div className="hidden max-md:flex absolute left-[20px] top-[0px] z-20 flex-col gap-1">
+              <span className="text-[14px] text-pink-300">❤️</span>
+              <span className="text-[10px] text-pink-300 ml-2">❤️</span>
+            </div>
+            <div className="hidden max-md:flex absolute right-[40px] top-[10px] z-20 h-8 w-8 items-center justify-center rounded-full bg-[#99C2FF]">
+              <span className="text-white">🤍</span>
+            </div>
+
             {/* PHONE 1 wrapper (its own relative context) */}
-            <div className="relative">
+            <div className="relative max-md:absolute max-md:left-[-15px] max-md:top-[60px] max-md:z-10">
               {/* TOP LEFT CARD — anchored to PHONE 1 */}
               <div
                 className="
@@ -205,8 +229,8 @@ export default function Vibe() {
                   />
                 </div>
 
-                <div className="rounded-full bg-[#F6C9CD] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
-                  <p className="whitespace-nowrap text-[12px] text-[#5F4A4A] max-lg:text-[6px]">
+                <div className="rounded-full bg-[#E3D9FE] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
+                  <p className="whitespace-nowrap text-[12px] text-[#5B4A8A] max-lg:text-[6px]">
                     Your form is perfect
                   </p>
                 </div>
@@ -227,20 +251,16 @@ export default function Vibe() {
                     rounded-[28px]
                     object-cover
 
-                    max-lg:h-[246px]
-                    max-lg:w-[120px]
-
-                    max-lg:absolute
-                    max-lg:left-[5px]
-                    max-lg:bottom-[25px]
-                    max-lg:rotate-[-10deg]
+                    max-md:h-[246px]
+                    max-md:w-[120px]
+                    max-md:rotate-[-10deg]
                   "
                 />
               </motion.div>
             </div>
 
             {/* PHONE 2 wrapper */}
-            <div className="relative">
+            <div className="relative max-md:absolute max-md:left-1/2 max-md:-translate-x-1/2 max-md:top-[20px] max-md:z-20">
               <motion.div
                 initial={{ opacity: 0, scale: 0.75, y: 50 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -256,14 +276,8 @@ export default function Vibe() {
                     rounded-[28px]
                     object-cover
 
-                    max-lg:h-[314px]
-                    max-lg:w-[150px]
-
-                    max-lg:absolute
-                    max-lg:left-1/2
-                    max-lg:bottom-[20px]
-                    max-lg:-translate-x-1/2
-                    max-lg:z-20
+                    max-md:h-[314px]
+                    max-md:w-[150px]
                   "
                 />
               </motion.div>
@@ -297,16 +311,16 @@ export default function Vibe() {
                   "
                 />
 
-                <div className="rounded-full bg-[#F6C9CD] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
-                  <p className="max-lg:max-w-[70px] max-lg:text-center whitespace-nowrap text-[9px] text-[#5B4A8A] max-lg:text-[6px]">
-                    Best recipe I will surely try it
+                <div className="rounded-full bg-[#99C2FF] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
+                  <p className="max-lg:max-w-[70px] max-lg:text-center whitespace-nowrap text-[9px] text-[#1E3A8A] max-lg:text-[6px]">
+                    Best recipe i will surely try it
                   </p>
                 </div>
               </div>
             </div>
 
             {/* PHONE 3 wrapper */}
-            <div className="relative">
+            <div className="relative max-md:absolute max-md:right-[-15px] max-md:top-[60px] max-md:z-10">
               {/* TOP RIGHT CARD — anchored to PHONE 3 */}
               <div
                 className="
@@ -322,8 +336,8 @@ export default function Vibe() {
                   max-lg:top-[-30px]
                 "
               >
-                <div className="rounded-full bg-[#DDD2FF] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
-                  <p className="whitespace-nowrap text-[12px] text-[#5B4A8A] max-lg:text-[6px]">
+                <div className="rounded-full bg-[#FFD1DA] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
+                  <p className="whitespace-nowrap text-[12px] text-[#A21249] max-lg:text-[6px]">
                     Super cool dance boi ❤️
                   </p>
                 </div>
@@ -356,7 +370,7 @@ export default function Vibe() {
                 transition={{ duration: 1, delay: 0.35, ease: [0.25, 1, 0.5, 1] }}
               >
                 <Image
-                  src="/images/figma/Vibes3.png"
+                  src="/images/figma/Vibes2.png"
                   alt="vibe3"
                   width={297}
                   height={608}
@@ -364,13 +378,9 @@ export default function Vibe() {
                     rounded-[28px]
                     object-cover
 
-                    max-lg:h-[245px]
-                    max-lg:w-[120px]
-
-                    max-lg:absolute
-                    max-lg:right-[5px]
-                    max-lg:bottom-[25px]
-                    max-lg:rotate-[10deg]
+                    max-md:h-[245px]
+                    max-md:w-[120px]
+                    max-md:rotate-[10deg]
                   "
                 />
               </motion.div>

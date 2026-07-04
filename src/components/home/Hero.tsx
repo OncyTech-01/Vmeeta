@@ -419,22 +419,22 @@ function FloatingHearts() {
     <div
       className="
         absolute
-        right-2
+        right-[50px]
         bottom-[60px]
         h-[220px]
         w-[70px]
 
-        sm:right-4
+        sm:right-[60px]
         sm:bottom-[80px]
         sm:h-[300px]
         sm:w-[90px]
 
-        md:right-6
+        md:right-[70px]
         md:bottom-[90px]
         md:h-[360px]
         md:w-[110px]
 
-        lg:right-10
+        lg:right-[90px]
         lg:bottom-[100px]
         lg:h-[440px]
         lg:w-[140px]
@@ -479,14 +479,16 @@ function CommentsWidget() {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
       className="
+        hidden
+        md:block
         absolute
-        right-8
-        bottom-[46px]
-        w-[175px]
+        right-3
+        bottom-[24px]
+        w-[150px]
 
-        sm:right-10
-        sm:bottom-[60px]
-        sm:w-[260px]
+        sm:right-4
+        sm:bottom-[42px]
+        sm:w-[200px]
 
         md:right-12
         md:bottom-[70px]
@@ -510,7 +512,7 @@ function CommentsWidget() {
               gap-1
               rounded-full
 
-              py-[2px]
+              py-[1px]
               pl-[2px]
               pr-2
 
@@ -557,8 +559,8 @@ function CommentsWidget() {
                   text-white
                   drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]
 
-                  text-[10px]
-                  sm:text-[14px]
+                  text-[9px]
+                  sm:text-[12px]
                   md:text-[15px]
                   lg:text-[16px]
                 "
@@ -572,8 +574,8 @@ function CommentsWidget() {
                   text-white
                   drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]
 
-                  text-[9px]
-                  sm:text-[13px]
+                  text-[8px]
+                  sm:text-[11px]
                   md:text-[14px]
                   lg:text-[15px]
                 "
@@ -761,7 +763,7 @@ export default function Hero() {
           <div className="mb-2 flex items-center gap-1 md:mb-6">
             {/* Live Badge */}
             <div
-  className="
+              className="
     flex
     h-[22px]
     w-[50px]
@@ -782,19 +784,19 @@ export default function Hero() {
     lg:w-[139px]
     lg:rounded-[12px]
   "
->
-  {/* Live Circle */}
-  <motion.div
-    animate={{
-      scale: [1, 1.4, 1],
-      opacity: [1, 0.5, 1],
-    }}
-    transition={{
-      duration: 1,
-      repeat: Infinity,
-      ease: "easeInOut",
-    }}
-    className="
+            >
+              {/* Live Circle */}
+              <motion.div
+                animate={{
+                  scale: [1, 1.4, 1],
+                  opacity: [1, 0.5, 1],
+                }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="
       h-[6px]
       w-[6px]
       rounded-full
@@ -806,10 +808,10 @@ export default function Hero() {
       lg:h-[10px]
       lg:w-[10px]
     "
-  />
+              />
 
-  <span
-    className="
+              <span
+                className="
       text-[10px]
       font-medium
       text-white
@@ -818,10 +820,10 @@ export default function Hero() {
       md:text-[20px]
       lg:text-[32px]
     "
-  >
-    Live
-  </span>
-</div>
+              >
+                Live
+              </span>
+            </div>
 
             {/* Views */}
             <div

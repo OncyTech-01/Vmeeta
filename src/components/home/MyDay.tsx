@@ -42,19 +42,19 @@ export default function MyDay() {
       <div
         className="
           w-full
-    max-w-[591px]
-    h-[227px]
+          max-w-[591px]
+          min-h-[560px]
 
-    md:max-w-[1367px]
-    md:min-h-[509px]
+          md:max-w-[1367px]
+          md:min-h-[509px]
 
-    rounded-[30px]
-    bg-gradient-to-r
-    from-[#FEF7ED]
-    to-[#FEE7CA]
+          rounded-[30px]
+          bg-gradient-to-r
+          from-[#FEF7ED]
+          to-[#FEE7CA]
         "
       >
-        <div className="flex h-full items-center justify-center gap-6 md:gap-10 lg:gap-14 xl:gap-20">
+        <div className="flex flex-col items-center justify-center gap-8 px-4 py-6 md:flex-row md:gap-10 md:px-6 lg:gap-14 xl:gap-20">
 
           {/* Left Content */}
           <motion.div
@@ -76,20 +76,22 @@ export default function MyDay() {
               ease: [0.25, 1, 0.5, 1],
             }}
             className="
-    w-[150px]
-    shrink-0
-    text-left
+              w-full
+              max-w-[380px]
+              shrink-0
+              text-left
 
-    sm:w-[180px]
-    md:w-[240px]
-    lg:w-[300px]
-    xl:w-[380px]
-  "
+              sm:max-w-[420px]
+              md:max-w-[240px]
+              lg:max-w-[300px]
+              xl:max-w-[380px]
+            "
           >
 
             {/* Badge */}
-            <div className="mb-5 inline-flex rounded-full bg-[#F9D99B] px-2 py-1 md:px-4 md:py-2 text-[8px] md:text-[13px] font-medium text-[#8A5B00]">
-              ✨ My Day • Status
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-[#F9D99B] px-3 py-1.5 md:px-4 md:py-2 text-[10px] md:text-[13px] font-medium text-[#8A5B00]">
+              <span className="h-2 w-2 rounded-full bg-[#F59E0B]"></span>
+              My Day - Stories
             </div>
 
             {/* Heading */}
@@ -175,7 +177,7 @@ export default function MyDay() {
 
           {/* Right Cards */}
           <motion.div
-            className="relative"
+            className="relative w-full md:w-auto"
             initial={{
               opacity: 0,
               x: 60,
@@ -194,7 +196,7 @@ export default function MyDay() {
               ease: [0.25, 1, 0.5, 1],
             }}
           >
-            <div className="relative flex items-center gap-[57px] md:gap-3 xl:gap-5">
+            <div className="relative flex flex-col items-center gap-6 md:flex-row md:items-center md:gap-3 xl:gap-5">
 
               {/* HEART */}
               <Image
@@ -203,30 +205,26 @@ export default function MyDay() {
                 width={28}
                 height={28}
                 className="
-                            absolute
-                            left-1/2
-                            top-[-20px]
-                            z-20
-                            -translate-x-1/2
-                            object-contain
-                            w-[28px]
-                            h-[28px]
+                  absolute
+                  left-[-15px]
+                  top-[-15px]
+                  z-20
+                  w-[28px]
+                  h-[28px]
+                  object-contain
 
-                            max-lg:right-[50px]
-                            max-lg:left-auto
-                            max-lg:top-[-50px]
-                            max-lg:w-[18px]
-                          "
-
+                  md:left-1/2
+                  md:-translate-x-1/2
+                  md:top-[-20px]
+                "
               />
 
               {/* CARD 1 */}
               <div
                 className={`
         relative shrink-0 overflow-hidden rounded-[20px]
-        w-[243px] h-[364px]
+        w-full max-w-[300px] h-[364px]
         ${currentCard === 0 ? "block" : "hidden"}
-        md:block
       `}
               >
                 <Image
@@ -280,9 +278,8 @@ export default function MyDay() {
               <div
                 className={`
         relative shrink-0 overflow-hidden rounded-[20px]
-        w-[243px] h-[364px]
+        w-full max-w-[300px] h-[364px]
         ${currentCard === 1 ? "block" : "hidden"}
-        md:block
       `}
               >
                 <Image
@@ -334,9 +331,8 @@ export default function MyDay() {
               <div
                 className={`
         relative shrink-0 overflow-hidden rounded-[20px]
-        w-[243px] h-[364px]
+        w-full max-w-[300px] h-[364px]
         ${currentCard === 2 ? "block" : "hidden"}
-        md:block
       `}
               >
                 <Image
@@ -387,13 +383,13 @@ export default function MyDay() {
 
               {/* WIDGETS */}
               {/* Left pill under left card */}
-              <div className="absolute left-[6px] top-[calc(100%+12px)] z-20 flex items-center gap-2 rounded-full bg-[#FFE4ED] px-3 py-2 text-[11px] font-semibold text-[#A21249] shadow-lg">
-                <img src="https://i.pravatar.cc/40?img=32" alt="avatar" className="h-6 w-6 rounded-full ring-2 ring-white object-cover" />
-                <span>Super cool</span>
+              <div className="absolute left-1/2 bottom-[-24px] z-20 flex -translate-x-1/2 items-center gap-1 rounded-full bg-[#FFD1DA] px-4 py-1.5 text-[11px] font-medium text-[#333] shadow-sm md:left-[6px] md:top-[calc(100%+12px)] md:bottom-auto md:translate-x-0 md:bg-[#FFE4ED] md:text-[#A21249] md:font-semibold">
+                <img src="https://i.pravatar.cc/40?img=32" alt="avatar" className="hidden h-6 w-6 rounded-full ring-2 ring-white object-cover md:block" />
+                <span>Super cool <span className="md:hidden">🖤</span></span>
               </div>
 
               {/* Center bubble with overlapping avatar */}
-              <div className="absolute left-1/2 top-[calc(98%)] z-20 -translate-x-1/2">
+              <div className="hidden md:block absolute left-1/2 top-[calc(98%)] z-20 -translate-x-1/2">
                 <img src="https://i.pravatar.cc/40?img=47" alt="avatar" className="mx-auto mb-2 h-8 w-8 rounded-full ring-2 ring-white object-cover" />
                 <div className="mx-auto max-w-[260px] rounded-full bg-[#F1E6FF] px-4 py-2 text-[11px] font-medium text-[#4B2F77] shadow-lg">
                   Greetings from korea.
@@ -401,7 +397,7 @@ export default function MyDay() {
               </div>
 
               {/* Right top badge with small progress bar */}
-              <div className="absolute right-0 top-[-64px] z-30 flex flex-col items-end gap-2">
+              <div className="hidden md:flex absolute right-0 top-[-64px] z-30 flex-col items-end gap-2">
                 <div className="flex items-center gap-2 rounded-full bg-[#FFF7D4] px-3 py-2 text-[11px] font-medium text-[#805A00] shadow-lg">
                   <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white">👪</span>
                   <span>Beautiful Family bless you</span>

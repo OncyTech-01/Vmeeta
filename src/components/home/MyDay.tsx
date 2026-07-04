@@ -1,13 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { motion } from "framer-motion";
 
-
-
 export default function MyDay() {
-
   const [currentCard, setCurrentCard] = useState(0);
 
   useEffect(() => {
@@ -17,7 +14,6 @@ export default function MyDay() {
 
     return () => clearInterval(interval);
   }, []);
-
 
   return (
     <motion.section
@@ -49,12 +45,10 @@ export default function MyDay() {
           md:min-h-[509px]
 
           rounded-[30px]
-          bg-gradient-to-r
-          from-[#FEF7ED]
-          to-[#FEE7CA]
+          bg-[#FFF7EF]
         "
       >
-        <div className="flex flex-col items-center justify-center gap-8 px-4 py-6 md:flex-row md:gap-10 md:px-6 lg:gap-14 xl:gap-20">
+        <div className="flex flex-col items-center justify-between gap-8 px-4 py-8 md:flex-row md:px-10 lg:px-16 xl:px-24 h-full min-h-[509px]">
 
           {/* Left Content */}
           <motion.div
@@ -80,38 +74,32 @@ export default function MyDay() {
               max-w-[380px]
               shrink-0
               text-left
-
-              sm:max-w-[420px]
-              md:max-w-[240px]
-              lg:max-w-[300px]
-              xl:max-w-[380px]
+              md:max-w-[340px]
+              lg:max-w-[400px]
+              xl:max-w-[450px]
             "
           >
-
             {/* Badge */}
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-[#F9D99B] px-3 py-1.5 md:px-4 md:py-2 text-[10px] md:text-[13px] font-medium text-[#8A5B00]">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-[#FCE2B6] px-3 py-1.5 md:px-4 md:py-2 text-[10px] md:text-[13px] font-medium text-[#D97706]">
               <span className="h-2 w-2 rounded-full bg-[#F59E0B]"></span>
               My Day - Stories
             </div>
 
             {/* Heading */}
             <h2 className="
-              text-[18px]
-              leading-[22px]
+              text-[28px]
+              leading-[34px]
               font-bold
               text-[#111111]
 
-              sm:text-[18px]
-              sm:leading-[20px]
+              md:text-[36px]
+              md:leading-[42px]
 
-              md:text-[28px]
-              md:leading-[34px]
+              lg:text-[48px]
+              lg:leading-[56px]
 
-              lg:text-[42px]
-              lg:leading-[48px]
-
-              xl:text-[52px]
-              xl:leading-[60px]
+              xl:text-[56px]
+              xl:leading-[64px]
             ">
               Share moments
               <br />
@@ -119,65 +107,40 @@ export default function MyDay() {
             </h2>
 
             {/* Description */}
-            <p className=" mt-3
-          text-[10px]
-          leading-[14px]
-          text-[#666666]
-
-          sm:text-[10px]
-          sm:leading-[13px]
-
-          md:mt-4
-          md:text-[14px]
-          md:leading-[22px]
-
-          lg:mt-5
-          lg:text-[16px]
-          lg:leading-[28px]">
-              From everyday fun to once-in-a-lifetime
-              adventures — share it all in real time
-              with the people who get you.
+            <p className="mt-4 text-[14px] leading-[22px] text-[#666666] md:text-[16px] md:leading-[26px] lg:text-[18px] lg:leading-[28px]">
+              From everyday fun to once-in-a-lifetime adventure - share it all in real time with the people who get you.
             </p>
 
             {/* Button */}
             <button
               className="
-                mt-4
+                mt-6
                 flex
                 items-center
                 gap-1
-                rounded-[14px]
-                bg-[#FFF5FF]
-                px-3
-                py-2
-                text-[10px]
-                font-medium
-                text-[#6C3FC2]
-
-                sm:px-4
-                sm:text-[9px]
-
-                md:mt-5
-                md:rounded-[18px]
-                md:px-5
-                md:py-2.5
-                md:text-[12px]
-
+                rounded-[12px]
+                bg-[#F8F0FF]
+                px-5
+                py-2.5
+                text-[13px]
+                font-semibold
+                text-[#8B5CF6]
+                transition-colors
+                hover:bg-[#F3E8FF]
                 lg:mt-8
-                lg:rounded-[20px]
                 lg:px-6
                 lg:py-3
-                lg:text-[14px]
-                              "
+                lg:text-[15px]
+              "
             >
               Start Sharing
-              <MdKeyboardArrowRight className="text-[14px]" />
+              <MdKeyboardArrowRight className="text-[18px]" />
             </button>
           </motion.div>
 
           {/* Right Cards */}
           <motion.div
-            className="relative w-full md:w-auto"
+            className="relative w-full md:w-auto mt-10 md:mt-0"
             initial={{
               opacity: 0,
               x: 60,
@@ -196,213 +159,127 @@ export default function MyDay() {
               ease: [0.25, 1, 0.5, 1],
             }}
           >
-            <div className="relative flex flex-col items-center gap-6 md:flex-row md:items-center md:gap-3 xl:gap-5">
+            <div className="relative flex flex-col items-center gap-4 md:flex-row md:items-center xl:gap-6">
 
-              {/* HEART */}
-              <Image
-                src="/images/figma/V2.png"
-                alt="top-heart"
-                width={28}
-                height={28}
-                className="
-                  absolute
-                  left-[-15px]
-                  top-[-15px]
-                  z-20
-                  w-[28px]
-                  h-[28px]
-                  object-contain
-
-                  md:left-1/2
-                  md:-translate-x-1/2
-                  md:top-[-20px]
-                "
-              />
+              {/* Red Hearts */}
+              <div className="absolute left-[-20px] top-[-30px] z-30">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="red" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </div>
+              <div className="absolute right-[40px] top-[-20px] z-30 hidden md:block">
+                <div className="rounded-full bg-white p-1 shadow-md">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="red" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </div>
+              </div>
 
               {/* CARD 1 */}
-              <div
-                className={`
-        relative shrink-0 overflow-hidden rounded-[20px]
-        w-full max-w-[300px] h-[364px]
-        ${currentCard === 0 ? "block" : "hidden"}
-      `}
-              >
-                <Image
-                  src="/images/figma/MyD1.png"
-                  alt="myday1"
-                  width={243}
-                  height={364}
-                  className="rounded-[20px] object-cover w-full h-full"
-                />
-
-                {/* Story Progress */}
+              <div className={`relative shrink-0 overflow-hidden rounded-[20px] shadow-lg md:block md:w-[200px] md:h-[320px] w-[240px] h-[380px] ${currentCard === 0 ? "block" : "hidden"}`}>
+                <Image src="/images/figma/MyD1.png" alt="myday1" fill className="object-cover" />
                 <div className="absolute left-3 right-3 top-3 z-20 flex gap-1">
-                  <div className="h-[3px] flex-1 rounded-full bg-[#2F80ED]" />
+                  <div className="h-[3px] flex-1 rounded-full bg-white" />
                   <div className="h-[3px] flex-1 rounded-full bg-white/50" />
                   <div className="h-[3px] flex-1 rounded-full bg-white/50" />
                 </div>
-
-                {/* Profile */}
-                <div className="absolute left-4 top-5 z-20 flex items-center gap-2">
-                  <img
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200"
-                    alt="profile"
-                    className="h-[42px] w-[42px] rounded-full border-2 border-white object-cover"
-                  />
-
+                <div className="absolute left-3 top-5 z-20 flex items-center gap-2">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200" alt="profile" className="h-8 w-8 rounded-full border-2 border-white object-cover" />
                   <div>
-                    <h3 className="text-[13px] font-semibold text-white">
-                      Sofia
-                    </h3>
-
-                    <p className="text-[9px] text-white/90">
-                      2h ago
-                    </p>
+                    <h3 className="text-[12px] font-semibold text-white leading-tight">Sofia</h3>
+                    <p className="text-[9px] text-white/90">2h ago</p>
                   </div>
                 </div>
-
-                <div className="absolute bottom-2.5 left-3 right-3 z-10 h-[58px] rounded-b-[20px] bg-black/25" />
-
-                <div className="absolute bottom-4 left-4 z-20">
-                  <h3 className="text-[13px] font-medium text-white">
-                    Nature Therapy
-                  </h3>
-
-                  <p className="mt-1 text-[9px] text-white/90">
-                    📍 Washington D.C, U.S.A
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
+                <div className="absolute bottom-4 left-4 right-4 z-20">
+                  <h3 className="text-[14px] font-medium text-white">Nature Therapy</h3>
+                  <p className="mt-1 text-[9px] text-white/90 flex items-center gap-1">
+                    <span className="text-[10px]">📍</span> Washington D.C, U.S.A
                   </p>
                 </div>
               </div>
 
-              {/* CARD 2 */}
-              <div
-                className={`
-        relative shrink-0 overflow-hidden rounded-[20px]
-        w-full max-w-[300px] h-[364px]
-        ${currentCard === 1 ? "block" : "hidden"}
-      `}
-              >
-                <Image
-                  src="/images/figma/MyD2.png"
-                  alt="myday2"
-                  width={243}
-                  height={364}
-                  className="rounded-[20px] object-cover w-full h-full"
-                />
-
+              {/* CARD 2 (Center - Active) */}
+              <div className={`relative shrink-0 overflow-hidden rounded-[20px] w-[240px] h-[380px] shadow-2xl z-10 md:block ${currentCard === 1 ? "block" : "hidden"}`}>
+                <Image src="/images/figma/MyD2.png" alt="myday2" fill className="object-cover" />
                 <div className="absolute left-4 right-4 top-5 z-20 flex gap-1">
-                  <div className="h-[2px] flex-1 rounded-full bg-white" />
-                  <div className="h-[2px] flex-1 rounded-full bg-[#0B60EA]" />
-                  <div className="h-[2px] flex-1 rounded-full bg-white" />
+                  <div className="h-[3px] flex-1 rounded-full bg-white/50" />
+                  <div className="h-[3px] flex-1 rounded-full bg-white" />
+                  <div className="h-[3px] flex-1 rounded-full bg-white/50" />
                 </div>
-
-                <div className="absolute left-4 top-6 z-20 flex items-center gap-2">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="profile"
-                    className="h-[40px] w-[40px] rounded-full border-2 border-white object-cover"
-                  />
-
+                <div className="absolute left-4 top-8 z-20 flex items-center gap-2">
+                  <img src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=387&auto=format&fit=crop" alt="profile" className="h-10 w-10 rounded-full border-2 border-white object-cover" />
                   <div>
-                    <h3 className="text-[10px] font-semibold text-white">
-                      Jessica
-                    </h3>
-
-                    <p className="text-[8px] text-white/90">
-                      1d ago
-                    </p>
+                    <h3 className="text-[14px] font-semibold text-white leading-tight">Jessica</h3>
+                    <p className="text-[10px] text-white/90">1d ago</p>
                   </div>
                 </div>
-
-                <div className="absolute bottom-5 left-3 right-3 z-10 h-[58px] rounded-b-[20px] bg-black/25" />
-
-                <div className="absolute bottom-7 left-6 z-20">
-                  <h3 className="text-[10px] font-medium text-white">
-                    Festival Vibe
-                  </h3>
-
-                  <p className="mt-1 text-[7px] text-white/90">
-                    📍 Seoul, South Korea
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
+                <div className="absolute bottom-6 left-5 right-5 z-20">
+                  <h3 className="text-[16px] font-medium text-white flex items-center gap-1">Festival Vibe <span className="text-purple-400">💜</span></h3>
+                  <p className="mt-1 text-[10px] text-white/90 flex items-center gap-1">
+                    <span className="text-[11px]">📍</span> Seoul, South Korea
                   </p>
                 </div>
               </div>
 
               {/* CARD 3 */}
-              <div
-                className={`
-        relative shrink-0 overflow-hidden rounded-[20px]
-        w-full max-w-[300px] h-[364px]
-        ${currentCard === 2 ? "block" : "hidden"}
-      `}
-              >
-                <Image
-                  src="/images/figma/MyD3.png"
-                  alt="myday3"
-                  width={243}
-                  height={364}
-                  className="rounded-[20px] object-cover w-full h-full"
-                />
-
+              <div className={`relative shrink-0 overflow-hidden rounded-[20px] shadow-lg md:block md:w-[200px] md:h-[320px] w-[240px] h-[380px] ${currentCard === 2 ? "block" : "hidden"}`}>
+                <Image src="/images/figma/MyD3.png" alt="myday3" fill className="object-cover" />
                 <div className="absolute left-3 right-3 top-3 z-20 flex gap-1">
+                  <div className="h-[3px] flex-1 rounded-full bg-white/50" />
+                  <div className="h-[3px] flex-1 rounded-full bg-white/50" />
                   <div className="h-[3px] flex-1 rounded-full bg-white" />
-                  <div className="h-[3px] flex-1 rounded-full bg-white" />
-                  <div className="h-[3px] flex-1 rounded-full bg-[#2F80ED]" />
                 </div>
-
-                <div className="absolute left-4 top-5 z-20 flex items-center gap-2">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1727976411254-a5bcfd199750?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="profile"
-                    className="h-[42px] w-[42px] rounded-full border-2 border-white object-cover"
-                  />
-
+                <div className="absolute left-3 top-5 z-20 flex items-center gap-2">
+                  <img src="https://plus.unsplash.com/premium_photo-1727976411254-a5bcfd199750?q=80&w=387&auto=format&fit=crop" alt="profile" className="h-8 w-8 rounded-full border-2 border-white object-cover" />
                   <div>
-                    <h3 className="text-[11px] font-semibold text-Grey">
-                      Yun kin
-                    </h3>
-
-                    <p className="text-[8px] text-Grey/90">
-                      3h ago
-                    </p>
+                    <h3 className="text-[12px] font-semibold text-white leading-tight">Yun kin</h3>
+                    <p className="text-[9px] text-white/90">3h ago</p>
                   </div>
                 </div>
-
-                <div className="absolute bottom-0 left-0 right-0 z-10 h-[68px] bg-black/30 backdrop-blur-[2px]" />
-
-                <div className="absolute bottom-3 left-4 z-20">
-                  <h3 className="text-[10px] font-semibold text-white">
-                    Sunday Picnic
-                  </h3>
-
-                  <p className="mt-1 text-[6px] text-white/90">
-                    📍 San Francisco, U.S.A
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
+                <div className="absolute bottom-4 left-4 right-4 z-20">
+                  <h3 className="text-[14px] font-medium text-white">Sunday Picnic</h3>
+                  <p className="mt-1 text-[9px] text-white/90 flex items-center gap-1">
+                    <span className="text-[10px]">📍</span> San Francisco, U.S.A
                   </p>
                 </div>
-
               </div>
 
               {/* WIDGETS */}
               {/* Left pill under left card */}
-              <div className="absolute left-1/2 bottom-[-24px] z-20 flex -translate-x-1/2 items-center gap-1 rounded-full bg-[#FFD1DA] px-4 py-1.5 text-[11px] font-medium text-[#333] shadow-sm md:left-[6px] md:top-[calc(100%+12px)] md:bottom-auto md:translate-x-0 md:bg-[#FFE4ED] md:text-[#A21249] md:font-semibold">
-                <img src="https://i.pravatar.cc/40?img=32" alt="avatar" className="hidden h-6 w-6 rounded-full ring-2 ring-white object-cover md:block" />
-                <span>Super cool <span className="md:hidden">🖤</span></span>
+              <div className="absolute left-[-20px] bottom-[-15px] z-20 hidden md:flex items-center gap-1 rounded-full bg-[#FFD6E0] px-4 py-2 text-[12px] font-semibold text-[#A21249] shadow-md">
+                <span>Super cool 🖤</span>
               </div>
 
               {/* Center bubble with overlapping avatar */}
-              <div className="hidden md:block absolute left-1/2 top-[calc(98%)] z-20 -translate-x-1/2">
-                <img src="https://i.pravatar.cc/40?img=47" alt="avatar" className="mx-auto mb-2 h-8 w-8 rounded-full ring-2 ring-white object-cover" />
-                <div className="mx-auto max-w-[260px] rounded-full bg-[#F1E6FF] px-4 py-2 text-[11px] font-medium text-[#4B2F77] shadow-lg">
-                  Greetings from korea.
-                </div>
+              <div className="absolute left-1/2 bottom-[-25px] z-30 hidden md:flex -translate-x-1/2 items-center gap-2 rounded-full bg-[#F1E6FF] p-1 pr-4 shadow-lg border border-[#E9D5FF]">
+                <img src="https://i.pravatar.cc/40?img=47" alt="avatar" className="h-7 w-7 rounded-full object-cover" />
+                <span className="text-[11px] font-semibold text-[#6C3FC2]">Greetings from korea.</span>
               </div>
 
-              {/* Right top badge with small progress bar */}
-              <div className="hidden md:flex absolute right-0 top-[-64px] z-30 flex-col items-end gap-2">
-                <div className="flex items-center gap-2 rounded-full bg-[#FFF7D4] px-3 py-2 text-[11px] font-medium text-[#805A00] shadow-lg">
-                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white">👪</span>
-                  <span>Beautiful Family bless you</span>
-                </div>
-                
+              {/* Right top badge with avatar */}
+              <div className="absolute right-0 top-[-30px] z-30 hidden md:flex items-center gap-2 rounded-full bg-[#FFF7D4] p-1 pr-4 shadow-md border border-[#FDE047]">
+                <img src="https://i.pravatar.cc/40?img=32" alt="avatar" className="h-6 w-6 rounded-full object-cover" />
+                <span className="text-[10px] font-semibold text-[#A16207]">Beautiful Family bless you</span>
+              </div>
+              
+              {/* Pink Sparkle */}
+              <div className="absolute left-[80px] top-[10px] z-30">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#FFB7D5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z"/>
+                </svg>
+              </div>
+              <div className="absolute left-[-10px] bottom-[40px] z-30">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFB7D5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z"/>
+                </svg>
+              </div>
+              <div className="absolute right-[20px] bottom-[-10px] z-30">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#C4B5FD" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="#C4B5FD" strokeWidth="4"/>
+                </svg>
               </div>
             </div>
           </motion.div>
@@ -410,4 +287,4 @@ export default function MyDay() {
       </div>
     </motion.section>
   );
-}
+}

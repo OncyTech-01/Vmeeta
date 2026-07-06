@@ -39,7 +39,7 @@ export default function MyDay() {
         className="
           w-full
           max-w-[591px]
-          min-h-[560px]
+          min-h-auto
 
           md:max-w-[1367px]
           md:min-h-[509px]
@@ -48,7 +48,7 @@ export default function MyDay() {
           bg-[#FFF7EF]
         "
       >
-        <div className="flex flex-col items-center justify-between gap-8 px-4 py-8 md:flex-row md:px-10 lg:px-16 xl:px-24 h-full min-h-[509px]">
+        <div className="flex flex-row items-center justify-between gap-4 px-4 py-8 md:gap-8 md:px-10 lg:px-16 xl:px-24 h-full md:min-h-[509px]">
 
           {/* Left Content */}
           <motion.div
@@ -70,25 +70,28 @@ export default function MyDay() {
               ease: [0.25, 1, 0.5, 1],
             }}
             className="
-              w-full
+              w-1/2
               max-w-[380px]
               shrink-0
               text-left
+              md:w-full
               md:max-w-[340px]
               lg:max-w-[400px]
               xl:max-w-[450px]
             "
           >
             {/* Badge */}
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-[#FCE2B6] px-3 py-1.5 md:px-4 md:py-2 text-[10px] md:text-[13px] font-medium text-[#D97706]">
-              <span className="h-2 w-2 rounded-full bg-[#F59E0B]"></span>
+            <div className="mb-3 md:mb-5 inline-flex items-center gap-1.5 md:gap-2 rounded-full bg-[#FCE2B6] px-2 py-1 md:px-4 md:py-2 text-[8px] sm:text-[10px] md:text-[13px] font-medium text-[#D97706]">
+              <span className="h-1.5 w-1.5 md:h-2 md:w-2 rounded-full bg-[#F59E0B]"></span>
               My Day - Stories
             </div>
 
             {/* Heading */}
             <h2 className="
-              text-[28px]
-              leading-[34px]
+              text-[18px]
+              leading-[22px]
+              sm:text-[24px]
+              sm:leading-[28px]
               font-bold
               text-[#111111]
 
@@ -107,22 +110,23 @@ export default function MyDay() {
             </h2>
 
             {/* Description */}
-            <p className="mt-4 text-[14px] leading-[22px] text-[#666666] md:text-[16px] md:leading-[26px] lg:text-[18px] lg:leading-[28px]">
+            <p className="mt-2 md:mt-4 text-[10px] leading-[14px] sm:text-[12px] sm:leading-[18px] text-[#666666] md:text-[16px] md:leading-[26px] lg:text-[18px] lg:leading-[28px]">
               From everyday fun to once-in-a-lifetime adventure - share it all in real time with the people who get you.
             </p>
 
             {/* Button */}
             <button
               className="
-                mt-6
+                mt-4
+                md:mt-6
                 flex
                 items-center
                 gap-1
-                rounded-[12px]
+                rounded-[8px] md:rounded-[12px]
                 bg-[#F8F0FF]
-                px-5
-                py-2.5
-                text-[13px]
+                px-3 py-1.5
+                md:px-5 md:py-2.5
+                text-[10px] sm:text-[12px] md:text-[13px]
                 font-semibold
                 text-[#8B5CF6]
                 transition-colors
@@ -134,13 +138,13 @@ export default function MyDay() {
               "
             >
               Start Sharing
-              <MdKeyboardArrowRight className="text-[18px]" />
+              <MdKeyboardArrowRight className="text-[14px] md:text-[18px]" />
             </button>
           </motion.div>
 
           {/* Right Cards */}
           <motion.div
-            className="relative w-full md:w-auto mt-10 md:mt-0"
+            className="relative w-1/2 flex justify-end md:w-auto mt-0"
             initial={{
               opacity: 0,
               x: 60,
@@ -167,16 +171,9 @@ export default function MyDay() {
                   <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
               </div>
-              <div className="absolute right-[40px] top-[-20px] z-30 hidden md:block">
-                <div className="rounded-full bg-white p-1 shadow-md">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="red" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                  </svg>
-                </div>
-              </div>
 
               {/* CARD 1 */}
-              <div className={`relative shrink-0 overflow-hidden rounded-[20px] shadow-lg md:block md:w-[200px] md:h-[320px] w-[240px] h-[380px] ${currentCard === 0 ? "block" : "hidden"}`}>
+              <div className={`relative shrink-0 overflow-hidden rounded-[12px] md:rounded-[20px] shadow-lg md:block md:w-[200px] md:h-[320px] w-[140px] h-[220px] sm:w-[160px] sm:h-[250px] lg:w-[240px] lg:h-[380px] ${currentCard === 0 ? "block" : "hidden"}`}>
                 <Image src="/images/figma/MyD1.png" alt="myday1" fill className="object-cover" />
                 <div className="absolute left-3 right-3 top-3 z-20 flex gap-1">
                   <div className="h-[3px] flex-1 rounded-full bg-white" />
@@ -184,23 +181,23 @@ export default function MyDay() {
                   <div className="h-[3px] flex-1 rounded-full bg-white/50" />
                 </div>
                 <div className="absolute left-3 top-5 z-20 flex items-center gap-2">
-                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200" alt="profile" className="h-8 w-8 rounded-full border-2 border-white object-cover" />
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200" alt="profile" className="h-6 w-6 md:h-8 md:w-8 rounded-full border-2 border-white object-cover" />
                   <div>
-                    <h3 className="text-[12px] font-semibold text-white leading-tight">Sofia</h3>
-                    <p className="text-[9px] text-white/90">2h ago</p>
+                    <h3 className="text-[10px] md:text-[12px] font-semibold text-white leading-tight">Sofia</h3>
+                    <p className="text-[8px] md:text-[9px] text-white/90">2h ago</p>
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
-                <div className="absolute bottom-4 left-4 right-4 z-20">
-                  <h3 className="text-[14px] font-medium text-white">Nature Therapy</h3>
-                  <p className="mt-1 text-[9px] text-white/90 flex items-center gap-1">
-                    <span className="text-[10px]">📍</span> Washington D.C, U.S.A
+                <div className="absolute bottom-3 md:bottom-4 left-3 md:left-4 right-3 md:right-4 z-20">
+                  <h3 className="text-[12px] md:text-[14px] font-medium text-white">Nature Therapy</h3>
+                  <p className="mt-0.5 md:mt-1 text-[8px] md:text-[9px] text-white/90 flex items-center gap-1">
+                    <span className="text-[9px] md:text-[10px]">📍</span> Washington D.C, U.S.A
                   </p>
                 </div>
               </div>
 
               {/* CARD 2 (Center - Active) */}
-              <div className={`relative shrink-0 overflow-hidden rounded-[20px] w-[240px] h-[380px] shadow-2xl z-10 md:block ${currentCard === 1 ? "block" : "hidden"}`}>
+              <div className={`relative shrink-0 overflow-hidden rounded-[12px] md:rounded-[20px] w-[140px] h-[220px] sm:w-[160px] sm:h-[250px] md:w-[240px] md:h-[380px] shadow-2xl z-10 md:block ${currentCard === 1 ? "block" : "hidden"}`}>
                 <Image src="/images/figma/MyD2.png" alt="myday2" fill className="object-cover" />
                 <div className="absolute left-4 right-4 top-5 z-20 flex gap-1">
                   <div className="h-[3px] flex-1 rounded-full bg-white/50" />
@@ -208,23 +205,23 @@ export default function MyDay() {
                   <div className="h-[3px] flex-1 rounded-full bg-white/50" />
                 </div>
                 <div className="absolute left-4 top-8 z-20 flex items-center gap-2">
-                  <img src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=387&auto=format&fit=crop" alt="profile" className="h-10 w-10 rounded-full border-2 border-white object-cover" />
+                  <img src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=387&auto=format&fit=crop" alt="profile" className="h-6 w-6 md:h-10 md:w-10 rounded-full border-2 border-white object-cover" />
                   <div>
-                    <h3 className="text-[14px] font-semibold text-white leading-tight">Jessica</h3>
-                    <p className="text-[10px] text-white/90">1d ago</p>
+                    <h3 className="text-[10px] md:text-[14px] font-semibold text-white leading-tight">Jessica</h3>
+                    <p className="text-[8px] md:text-[10px] text-white/90">1d ago</p>
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
-                <div className="absolute bottom-6 left-5 right-5 z-20">
-                  <h3 className="text-[16px] font-medium text-white flex items-center gap-1">Festival Vibe <span className="text-purple-400">💜</span></h3>
-                  <p className="mt-1 text-[10px] text-white/90 flex items-center gap-1">
-                    <span className="text-[11px]">📍</span> Seoul, South Korea
+                <div className="absolute bottom-4 md:bottom-6 left-3 md:left-5 right-3 md:right-5 z-20">
+                  <h3 className="text-[12px] md:text-[16px] font-medium text-white flex items-center gap-1">Festival Vibe <span className="text-purple-400">💜</span></h3>
+                  <p className="mt-0.5 md:mt-1 text-[8px] md:text-[10px] text-white/90 flex items-center gap-1">
+                    <span className="text-[9px] md:text-[11px]">📍</span> Seoul, South Korea
                   </p>
                 </div>
               </div>
 
               {/* CARD 3 */}
-              <div className={`relative shrink-0 overflow-hidden rounded-[20px] shadow-lg md:block md:w-[200px] md:h-[320px] w-[240px] h-[380px] ${currentCard === 2 ? "block" : "hidden"}`}>
+              <div className={`relative shrink-0 overflow-hidden rounded-[12px] md:rounded-[20px] shadow-lg md:block md:w-[200px] md:h-[320px] w-[140px] h-[220px] sm:w-[160px] sm:h-[250px] lg:w-[240px] lg:h-[380px] ${currentCard === 2 ? "block" : "hidden"}`}>
                 <Image src="/images/figma/MyD3.png" alt="myday3" fill className="object-cover" />
                 <div className="absolute left-3 right-3 top-3 z-20 flex gap-1">
                   <div className="h-[3px] flex-1 rounded-full bg-white/50" />
@@ -232,35 +229,35 @@ export default function MyDay() {
                   <div className="h-[3px] flex-1 rounded-full bg-white" />
                 </div>
                 <div className="absolute left-3 top-5 z-20 flex items-center gap-2">
-                  <img src="https://plus.unsplash.com/premium_photo-1727976411254-a5bcfd199750?q=80&w=387&auto=format&fit=crop" alt="profile" className="h-8 w-8 rounded-full border-2 border-white object-cover" />
+                  <img src="https://plus.unsplash.com/premium_photo-1727976411254-a5bcfd199750?q=80&w=387&auto=format&fit=crop" alt="profile" className="h-6 w-6 md:h-8 md:w-8 rounded-full border-2 border-white object-cover" />
                   <div>
-                    <h3 className="text-[12px] font-semibold text-white leading-tight">Yun kin</h3>
-                    <p className="text-[9px] text-white/90">3h ago</p>
+                    <h3 className="text-[10px] md:text-[12px] font-semibold text-white leading-tight">Yun kin</h3>
+                    <p className="text-[8px] md:text-[9px] text-white/90">3h ago</p>
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
-                <div className="absolute bottom-4 left-4 right-4 z-20">
-                  <h3 className="text-[14px] font-medium text-white">Sunday Picnic</h3>
-                  <p className="mt-1 text-[9px] text-white/90 flex items-center gap-1">
-                    <span className="text-[10px]">📍</span> San Francisco, U.S.A
+                <div className="absolute bottom-3 md:bottom-4 left-3 md:left-4 right-3 md:right-4 z-20">
+                  <h3 className="text-[12px] md:text-[14px] font-medium text-white">Sunday Picnic</h3>
+                  <p className="mt-0.5 md:mt-1 text-[8px] md:text-[9px] text-white/90 flex items-center gap-1">
+                    <span className="text-[9px] md:text-[10px]">📍</span> San Francisco, U.S.A
                   </p>
                 </div>
               </div>
 
               {/* WIDGETS */}
               {/* Left pill under left card */}
-              <div className="absolute left-[-20px] bottom-[-15px] z-20 hidden md:flex items-center gap-1 rounded-full bg-[#FFD6E0] px-4 py-2 text-[12px] font-semibold text-[#A21249] shadow-md">
+              <div className="absolute left-[-10px] md:left-[-15px] bottom-[-15px] md:bottom-[-20px] z-20 flex md:flex items-center gap-1 rounded-full bg-[#FFD6E0] px-2 py-1 md:px-4 md:py-2 text-[8px] md:text-[12px] font-semibold text-[#A21249] shadow-md">
                 <span>Super cool 🖤</span>
               </div>
 
               {/* Center bubble with overlapping avatar */}
-              <div className="absolute left-1/2 bottom-[-25px] z-30 hidden md:flex -translate-x-1/2 items-center gap-2 rounded-full bg-[#F1E6FF] p-1 pr-4 shadow-lg border border-[#E9D5FF]">
+              <div className="absolute left-1/2 bottom-[-15px] md:bottom-[-24px] z-30 hidden md:flex -translate-x-1/2 items-center gap-2 rounded-full bg-[#F1E6FF] p-1 pr-4 shadow-lg border border-[#E9D5FF]">
                 <img src="https://i.pravatar.cc/40?img=47" alt="avatar" className="h-7 w-7 rounded-full object-cover" />
                 <span className="text-[11px] font-semibold text-[#6C3FC2]">Greetings from korea.</span>
               </div>
 
               {/* Right top badge with avatar */}
-              <div className="absolute right-0 top-[-30px] z-30 hidden md:flex items-center gap-2 rounded-full bg-[#FFF7D4] p-1 pr-4 shadow-md border border-[#FDE047]">
+              <div className="absolute right-[-10px] md:right-[-20px] top-[-15px] md:top-[-25px] z-30 hidden md:flex items-center gap-2 rounded-full bg-[#FFF7D4] p-1 pr-4 shadow-md border border-[#FDE047]">
                 <img src="https://i.pravatar.cc/40?img=32" alt="avatar" className="h-6 w-6 rounded-full object-cover" />
                 <span className="text-[10px] font-semibold text-[#A16207]">Beautiful Family bless you</span>
               </div>
@@ -287,4 +284,4 @@ export default function MyDay() {
       </div>
     </motion.section>
   );
-}
+}

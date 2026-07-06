@@ -326,14 +326,14 @@ export default function Vibe() {
                 className="
                   absolute
                   right-[10px]
-                  top-[-60px]
+                  top-[-30px]
                   z-40
                   flex
                   items-center
                   gap-3
 
                   max-lg:right-[14px]
-                  max-lg:top-[-30px]
+                  max-lg:top-[-15px]
                 "
               >
                 <div className="rounded-full bg-[#FFD1DA] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">

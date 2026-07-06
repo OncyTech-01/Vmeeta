@@ -419,7 +419,6 @@ function FloatingHearts() {
     <div
       className="
         block
-        md:hidden
         absolute
         right-[50px]
         bottom-[60px]
@@ -482,7 +481,6 @@ function CommentsWidget() {
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
       className="
         block
-        md:hidden
         absolute
         right-3
         bottom-[24px]
@@ -562,9 +560,9 @@ function CommentsWidget() {
                   drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]
 
                   text-[9px]
-                  sm:text-[12px]
-                  md:text-[15px]
-                  lg:text-[16px]
+                  sm:text-[9px]
+                  md:text-[12px]
+                  lg:text-[15px]
                 "
               >
                 {c.name} -
@@ -577,9 +575,9 @@ function CommentsWidget() {
                   drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]
 
                   text-[8px]
-                  sm:text-[11px]
-                  md:text-[14px]
-                  lg:text-[15px]
+                  sm:text-[6px]
+                  md:text-[8px]
+                  lg:text-[10px]
                 "
               >
                 {c.text}
@@ -712,7 +710,7 @@ export default function Hero() {
 
         {/* Desktop Image */}
         <Image
-          src="/images/figma/Hero-mobile.png"
+          src="/images/figma/Hero-mobile2.png"
           alt="Hero"
           fill
           priority

@@ -136,7 +136,6 @@ export default function Posts() {
               ease: [0.25, 1, 0.5, 1],
             }}
           >
-
             {/* Left Column */}
             <div className="flex flex-col gap-4 pt-[15px]">
               <motion.div
@@ -172,7 +171,7 @@ export default function Posts() {
                 {/* Profile + Name */}
                 <div className="absolute left-2 top-2 flex items-start gap-2">
                   <img
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="profile"
                     className="h-[28px] w-[28px] rounded-full border border-white object-cover"
                   />
@@ -540,7 +539,7 @@ export default function Posts() {
                     />
 
                     <img
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
+                      src="https://images.unsplash.com/photo-1658932447761-8a59cd02d201?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="profile"
                       className="h-[42px] w-[42px] rounded-full border-2 border-white object-cover"
                     />
@@ -641,7 +640,7 @@ export default function Posts() {
             {/* Profile */}
             <div className="absolute left-3 top-5 flex items-center gap-2">
               <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="profile"
                 className="h-[22px] w-[22px] rounded-full border border-white object-cover"
               />

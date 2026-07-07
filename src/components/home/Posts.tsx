@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Posts() {
   return (
-    <section className="flex justify-center pt-[48px] px-[8px]">
+    <section className="flex justify-center pt-[66px] px-[8px]">
       <div
         className="
          w-full

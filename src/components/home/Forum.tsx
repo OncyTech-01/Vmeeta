@@ -13,7 +13,7 @@ const EASE: [number, number, number, number] = [
 
 export default function Forum() {
   return (
-    <section className="flex justify-center pt-[60px] px-[12px]">
+    <section className="flex justify-center pt-[78px] px-[12px]">
       <div
         className="
         relative

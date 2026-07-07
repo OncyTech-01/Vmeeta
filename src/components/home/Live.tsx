@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Live() {
   return (
-    <section className="flex justify-center pt-[48px] px-4">
+    <section className="flex justify-center pt-[66px] px-4">
       <div
         className="
           relative

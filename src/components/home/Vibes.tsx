@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Vibe() {
   return (
-    <section className="flex justify-center px-[10px] pt-[48px]">
+    <section className="flex justify-center px-[10px] pt-[66px]">
       <div
         className="
           relative
@@ -186,14 +186,14 @@ export default function Vibe() {
             {/* Mobile decorations */}
             <div className="hidden max-md:flex absolute left-[20px] top-[0px] z-20 flex-col gap-1">
               <span className="text-[14px] text-pink-300">❤️</span>
-              <span className="text-[10px] text-pink-300 ml-2">❤️</span>
+
             </div>
-            <div className="hidden max-md:flex absolute right-[40px] top-[10px] z-20 h-8 w-8 items-center justify-center rounded-full bg-[#99C2FF]">
+            {/* <div className="hidden max-md:flex absolute right-[40px] top-[10px] z-20 h-8 w-8 items-center justify-center rounded-full bg-[#99C2FF]">
               <span className="text-white">🤍</span>
-            </div>
+            </div> */}
 
             {/* PHONE 1 wrapper (its own relative context) */}
-            <div className="relative max-md:absolute max-md:left-[-15px] max-md:top-[60px] max-md:z-10">
+            <div className="relative max-md:absolute max-md:left-[5px] max-md:top-[60px] max-md:z-10">
               {/* TOP LEFT CARD — anchored to PHONE 1 */}
               <div
                 className="
@@ -205,11 +205,12 @@ export default function Vibe() {
                   items-center
                   gap-3
 
-                  max-lg:left-[-6px]
-                  max-lg:top-[-30px]
+                  max-md:left-[-15px]
+                  max-md:top-[-40px]
+                  max-md:gap-1
                 "
               >
-                <div className="rounded-full bg-white p-[2px] shadow-sm">
+                <div className="rounded-full bg-white p-[2px] shadow-sm shrink-0 z-50 relative">
                   <img
                     src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="profile"
@@ -253,6 +254,7 @@ export default function Vibe() {
 
                     max-md:h-[246px]
                     max-md:w-[120px]
+                    max-md:rounded-[12px]
                     max-md:rotate-[-10deg]
                   "
                 />
@@ -278,6 +280,7 @@ export default function Vibe() {
 
                     max-md:h-[314px]
                     max-md:w-[150px]
+                    max-md:rounded-[16px]
                   "
                 />
               </motion.div>
@@ -305,6 +308,9 @@ export default function Vibe() {
                     w-[42px]
                     rounded-full
                     object-cover
+                    shrink-0
+                    z-50
+                    relative
 
                     max-lg:h-[20px]
                     max-lg:w-[20px]
@@ -312,7 +318,7 @@ export default function Vibe() {
                 />
 
                 <div className="rounded-full bg-[#99C2FF] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
-                  <p className="max-lg:max-w-[70px] max-lg:text-center whitespace-nowrap text-[9px] text-[#1E3A8A] max-lg:text-[6px]">
+                  <p className="whitespace-nowrap text-[9px] text-[#1E3A8A] max-lg:text-[6px]">
                     Best recipe i will surely try it
                   </p>
                 </div>
@@ -320,29 +326,24 @@ export default function Vibe() {
             </div>
 
             {/* PHONE 3 wrapper */}
-            <div className="relative max-md:absolute max-md:right-[-15px] max-md:top-[60px] max-md:z-10">
+            <div className="relative max-md:absolute max-md:right-[5px] max-md:top-[60px] max-md:z-10">
               {/* TOP RIGHT CARD — anchored to PHONE 3 */}
               <div
                 className="
                   absolute
-                  right-[10px]
-                  top-[-30px]
+                  right-[50px]
+                  top-[-50px]
                   z-40
                   flex
                   items-center
                   gap-3
 
-                  max-lg:right-[14px]
-                  max-lg:top-[-15px]
+                  max-md:right-[-20px]
+                  max-md:top-[-30px]
+                  max-md:gap-1
                 "
               >
-                <div className="rounded-full bg-[#FFD1DA] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1">
-                  <p className="whitespace-nowrap text-[12px] text-[#A21249] max-lg:text-[6px]">
-                    Super cool dance boi ❤️
-                  </p>
-                </div>
-
-                <div className="rounded-full bg-white p-[2px] shadow-sm">
+                <div className="rounded-full bg-white p-[2px] shadow-sm shrink-0 z-50 relative">
                   <img
                     src="https://images.unsplash.com/photo-1658932447761-8a59cd02d201?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="profile"
@@ -360,6 +361,12 @@ export default function Vibe() {
                       max-lg:w-[22px]
                     "
                   />
+                </div>
+
+                <div className="rounded-full bg-[#FFD1DA] px-4 py-2 shadow-sm max-lg:px-2 max-lg:py-1 z-40 max-md:-ml-3">
+                  <p className="whitespace-nowrap text-[12px] text-[#A21249] max-lg:text-[6px]">
+                    Super cool dance boi ❤️
+                  </p>
                 </div>
               </div>
 
@@ -380,6 +387,7 @@ export default function Vibe() {
 
                     max-md:h-[245px]
                     max-md:w-[120px]
+                    max-md:rounded-[12px]
                     max-md:rotate-[10deg]
                   "
                 />
@@ -391,5 +399,4 @@ export default function Vibe() {
     </section>
   );
 }
-
 

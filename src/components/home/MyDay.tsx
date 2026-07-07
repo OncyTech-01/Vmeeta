@@ -17,7 +17,7 @@ export default function MyDay() {
 
   return (
     <motion.section
-      className="flex justify-center overflow-hidden px-4 pt-[48px] lg:px-[37px]"
+      className="flex justify-center overflow-hidden px-4 pt-[66px] lg:px-[37px]"
       initial={{
         opacity: 0,
         y: 80,

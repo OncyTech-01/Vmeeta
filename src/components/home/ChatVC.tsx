@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function ChatVC() {
   return (
-    <section className="flex justify-center px-4 pt-[40px] lg:px-[8px]">
+    <section className="flex justify-center px-4 pt-[58px] lg:px-[8px]">
       <div
         className="
           relative

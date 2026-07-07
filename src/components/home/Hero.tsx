@@ -463,7 +463,7 @@ function FloatingHearts() {
           style={{ left: h.left, bottom: h.bottom }}
         >
           <FaHeart
-            className="text-[#FF2B4C] drop-shadow-md"
+            className="text-[#FF2B4C] drop-shadow-md max-md:scale-[0.4] max-md:origin-bottom"
             style={{ fontSize: h.size }}
           />
         </motion.div>
@@ -483,8 +483,8 @@ function CommentsWidget() {
         block
         absolute
         right-3
-        bottom-[24px]
-        w-[150px]
+        bottom-[16px]
+        w-[110px]
 
         sm:right-4
         sm:bottom-[42px]
@@ -509,7 +509,7 @@ function CommentsWidget() {
             className="
               flex
               items-center
-              gap-1
+              gap-[2px]
               rounded-full
 
               py-[1px]
@@ -533,11 +533,11 @@ function CommentsWidget() {
                 shrink-0
                 rounded-full
                 object-cover
-                ring-2
+                ring-1
                 ring-white/80
 
-                h-[20px]
-                w-[20px]
+                h-[10px]
+                w-[10px]
 
                 sm:h-[32px]
                 sm:w-[32px]
@@ -559,7 +559,7 @@ function CommentsWidget() {
                   text-white
                   drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]
 
-                  text-[9px]
+                  text-[5px]
                   sm:text-[9px]
                   md:text-[12px]
                   lg:text-[15px]
@@ -574,7 +574,7 @@ function CommentsWidget() {
                   text-white
                   drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]
 
-                  text-[8px]
+                  text-[4px]
                   sm:text-[6px]
                   md:text-[8px]
                   lg:text-[10px]
@@ -593,7 +593,7 @@ function CommentsWidget() {
                 text-white/80
                 drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)]
 
-                text-[6px]
+                text-[3px]
                 sm:text-[10px]
                 md:text-[11px]
                 lg:text-[12px]
@@ -617,8 +617,8 @@ function CommentsWidget() {
           bg-[#3B3B3B]/60
           backdrop-blur-md
 
-          h-[22px]
-          px-2.5
+          h-[16px]
+          px-2
 
           sm:h-[34px]
           sm:mt-3
@@ -634,7 +634,7 @@ function CommentsWidget() {
           className="
             text-white/70
 
-            text-[8px]
+            text-[6px]
             sm:text-[12px]
             md:text-[13px]
             lg:text-[15px]
@@ -651,8 +651,8 @@ function CommentsWidget() {
             rounded-full
             bg-white/90
 
-            h-[14px]
-            w-[14px]
+            h-[10px]
+            w-[10px]
 
             sm:h-[22px]
             sm:w-[22px]
@@ -664,7 +664,7 @@ function CommentsWidget() {
             lg:w-[30px]
           "
         >
-          <FaPaperPlane className="text-[5px] text-[#2D79F5] sm:text-[9px] lg:text-[11px]" />
+          <FaPaperPlane className="text-[4px] text-[#2D79F5] sm:text-[9px] lg:text-[11px]" />
         </span>
 
 
@@ -675,7 +675,9 @@ function CommentsWidget() {
 
 export default function Hero() {
   return (
-    <section className="flex justify-center px-2 pt-4 sm:px-4 md:px-5 lg:px-[10px] lg:pt-[50px]">
+    <section className="flex justify-center px-2 pt-[34px] sm:px-4 md:px-5 lg:px-[10px] lg:pt-[68px]">
+      {/* 
+        This is the inner rounded container that holds everything. */}
       <div
         className="
           relative

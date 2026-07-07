@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Download() {
   return (
-    <section className="flex justify-center pt-[32px] md:pt-[48px] pb-[50px] md:pb-[80px] ">
+    <section className="flex justify-center pt-[50px] md:pt-[66px] pb-[68px] md:pb-[98px] ">
       <div
         className="
           relative

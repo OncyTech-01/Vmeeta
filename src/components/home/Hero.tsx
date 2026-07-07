@@ -710,7 +710,7 @@ export default function Hero() {
 
         {/* Desktop Image */}
         <Image
-          src="/images/figma/Hero-mobile2.png"
+          src="/images/figma/hero-mobile2.png"
           alt="Hero"
           fill
           priority
